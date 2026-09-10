@@ -42,3 +42,26 @@ npm run deploy       # 4. build, sync to S3, invalidate
 `npm run deploy` builds, syncs `dist/` to the bucket, and invalidates the distribution.
 Hashed assets are uploaded `immutable` for a year; `index.html`, `robots.txt` and
 `sitemap.xml` are uploaded `must-revalidate` so a deploy is visible immediately.
+
+## Shipping
+
+Pushing `main` builds and deploys automatically, via the tracked
+[`.githooks/pre-push`](.githooks/pre-push) hook. The hook lives in the repo rather than
+`.git/hooks` so it is reviewable, which means a fresh clone has to opt in once:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+git has no post-push hook, so this runs *before* the refs reach the remote — a failing
+build aborts the push, and broken `main` never leaves the machine. The tradeoff is that
+the deploy also happens before the push, so a rejected push (a race with another commit)
+can leave S3 briefly ahead of `origin/main`; re-pushing reconciles it.
+
+Pushes to any other branch do nothing. If the `drestin-site-prod` stack does not exist
+yet, the hook says so and lets the push through rather than blocking it. To push `main`
+without shipping:
+
+```sh
+SKIP_DEPLOY=1 git push
+```

@@ -1,0 +1,7 @@
+* text=auto
+
+# Shell scripts must keep LF. Git Bash on Windows chokes on a CRLF shebang
+# ("#!/bin/sh\r" -> bad interpreter), which would silently break the hook on a
+# fresh clone.
+.githooks/** text eol=lf
+*.sh text eol=lf
