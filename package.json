@@ -1,0 +1,26 @@
+{
+  "name": "drestin-com",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "deploy": "npm run build && node scripts/deploy.mjs",
+    "infra:dns": "aws cloudformation deploy --template-file infra/dns.yml --stack-name drestin-dns --region us-east-1",
+    "infra:site": "aws cloudformation deploy --template-file infra/site.yml --stack-name drestin-site-prod --region us-east-1"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "vite": "^8.2.2"
+  }
+}

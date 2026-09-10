@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: drestin.com public hosted zone. Deploy this FIRST, point GoDaddy at the
+  returned name servers, then deploy site.yml (ACM validation needs live delegation).
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: drestin.com
+
+Resources:
+  HostedZone:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: !Ref DomainName
+      HostedZoneConfig:
+        Comment: Dr Estin / docmaui
+
+Outputs:
+  HostedZoneId:
+    Value: !Ref HostedZone
+    Export:
+      Name: drestin-hosted-zone-id
+  NameServers:
+    Description: Set these four as the custom name servers in GoDaddy.
+    Value: !Join [", ", !GetAtt HostedZone.NameServers]

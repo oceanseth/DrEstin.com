@@ -1,0 +1,69 @@
+:root {
+  --ocean-900: #04202b;
+  --ocean-800: #073344;
+  --ocean-700: #0a465e;
+  --ocean-400: #2d9cbd;
+  --ocean-200: #8fd4e6;
+  --sand: #f4ece1;
+  --coral: #ff7a59;
+  --coral-soft: #ffb59e;
+
+  --bg: var(--ocean-900);
+  --surface: rgba(255, 255, 255, 0.04);
+  --border: rgba(143, 212, 230, 0.16);
+  --text: #eaf4f7;
+  --text-dim: #a9c3cc;
+
+  --measure: 62ch;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --section-y: clamp(4rem, 11vw, 8.5rem);
+
+  color-scheme: dark;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ocean-200);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
