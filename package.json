@@ -8,9 +8,10 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "deploy": "npm run build && node scripts/deploy.mjs",
+    "deploy": "node scripts/check-media.mjs && npm run build && node scripts/deploy.mjs",
     "infra:dns": "aws cloudformation deploy --template-file infra/dns.yml --stack-name drestin-dns --region us-east-1",
-    "infra:site": "aws cloudformation deploy --template-file infra/site.yml --stack-name drestin-site-prod --region us-east-1"
+    "infra:site": "aws cloudformation deploy --template-file infra/site.yml --stack-name drestin-site-prod --region us-east-1",
+    "check:media": "node scripts/check-media.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

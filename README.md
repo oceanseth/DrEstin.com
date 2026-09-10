@@ -13,6 +13,15 @@ All site copy lives in [`src/content.js`](src/content.js) — edit that one file
 the components. Entries marked `TODO` are placeholders. Social links with `href: null` are
 rendered greyed out and non-clickable until a URL is filled in.
 
+## Media
+
+Photos and the welcome video live in [`public/media/`](public/media/) — see the README there
+for formats and size limits. Add a file, then point `src/content.js` at it; until you do, the
+page shows a dashed placeholder in that spot rather than a broken image.
+
+`npm run check:media` verifies every referenced file exists and that photos with a `src` also
+have `alt` text. `npm run deploy` runs it first and refuses to ship if it fails.
+
 ## Infrastructure
 
 Two stacks in `us-east-1` (CloudFront requires its ACM cert there):

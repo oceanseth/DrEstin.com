@@ -404,3 +404,121 @@ a.linklist__row:hover {
   font-size: 0.97rem;
   max-width: var(--measure);
 }
+
+/* ---- welcome letter ---- */
+.welcome__lede {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 20ch;
+  background: linear-gradient(100deg, var(--sand), var(--coral-soft));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.welcome__media {
+  margin-top: 2rem;
+  max-width: 48rem;
+}
+
+.welcome__video {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: #000;
+  display: block;
+}
+
+.welcome__letter {
+  display: grid;
+  gap: 1.35rem;
+  margin-top: 2.75rem;
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  color: var(--text-dim);
+}
+
+.welcome__letter > p {
+  max-width: var(--measure);
+}
+
+/* The opening paragraph carries the most weight, so give it full contrast. */
+.welcome__letter > p:first-child {
+  color: var(--text);
+}
+
+.photo {
+  margin: 1rem 0;
+}
+
+.photo--wide {
+  max-width: 48rem;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+.photo figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+/* ---- asset placeholders ---- */
+.placeholder {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 48rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px dashed var(--ocean-400);
+  border-radius: 1rem;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(45, 156, 189, 0.05) 10px,
+      rgba(45, 156, 189, 0.05) 20px
+    ),
+    var(--surface);
+  margin: 1rem 0;
+}
+
+.placeholder__label {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 580;
+  color: var(--ocean-200);
+}
+
+.placeholder__hint {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  max-width: 44ch;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---- stats as a row under the letter ---- */
+.stats--row {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 40rem) {
+  .stats--row {
+    grid-auto-flow: row;
+  }
+}

@@ -1,14 +1,23 @@
 import { useEffect, useState } from 'react'
-import { about, contact, links, news, site, work } from './content'
+import { contact, links, news, site, welcome, work } from './content'
 import './App.css'
 
 const NAV = [
-  { href: '#about', label: 'About' },
+  { href: '#welcome', label: 'Welcome' },
   { href: '#work', label: 'What I do' },
   { href: '#news', label: 'News' },
   { href: '#links', label: 'Find me' },
   { href: '#contact', label: 'Contact' },
 ]
+
+// Number the photo blocks once up front, so a placeholder can name the file it wants
+// without counting during render.
+const WELCOME_BLOCKS = (() => {
+  let n = 0
+  return welcome.blocks.map((block) =>
+    block.type === 'photo' ? { ...block, photoIndex: (n += 1) } : block,
+  )
+})()
 
 const DATE_FMT = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
@@ -59,7 +68,7 @@ function Hero() {
         <a className="btn btn--primary" href="#links">
           Find me online
         </a>
-        <a className="btn btn--ghost" href="#about">
+        <a className="btn btn--ghost" href="#welcome">
           Read the story
         </a>
       </div>
@@ -76,24 +85,94 @@ function Section({ id, heading, children }) {
   )
 }
 
-function About() {
+// Stands in for a missing asset so the layout is reviewable before the files exist.
+// Renders nothing once the real src is filled in.
+function Placeholder({ ratio, label, hint }) {
   return (
-    <Section id="about" heading={about.heading}>
-      <div className="about">
-        <div className="about__body">
-          {about.body.map((line) => (
-            <p key={line}>{line}</p>
-          ))}
-        </div>
-        <dl className="stats">
-          {about.stats.map((stat) => (
-            <div key={stat.label}>
-              <dt className="stat__value">{stat.value}</dt>
-              <dd className="stat__label">{stat.label}</dd>
-            </div>
-          ))}
-        </dl>
+    <div className="placeholder" style={{ aspectRatio: ratio }}>
+      <span className="placeholder__label">{label}</span>
+      <span className="placeholder__hint">{hint}</span>
+    </div>
+  )
+}
+
+function WelcomeVideo() {
+  const { src, poster, captions, label } = welcome.video
+
+  if (!src) {
+    return (
+      <Placeholder
+        ratio="16 / 9"
+        label={label}
+        hint="Drop the file at public/media/welcome.mp4, then set video.src in src/content.js"
+      />
+    )
+  }
+
+  return (
+    <video
+      className="welcome__video"
+      controls
+      playsInline
+      preload="metadata"
+      poster={poster ?? undefined}
+      aria-label={label}
+    >
+      <source src={src} type="video/mp4" />
+      {captions && (
+        <track kind="captions" src={captions} srcLang="en" label="English" default />
+      )}
+    </video>
+  )
+}
+
+function Photo({ block, index }) {
+  if (!block.src) {
+    return (
+      <Placeholder
+        ratio="3 / 2"
+        label={`Photo ${index}`}
+        hint={`Drop the file at public/media/photo-${index}.jpg, then set src and alt in src/content.js`}
+      />
+    )
+  }
+
+  return (
+    <figure className={`photo photo--${block.width ?? 'wide'}`}>
+      <img src={block.src} alt={block.alt} loading="lazy" decoding="async" />
+      {block.caption && <figcaption>{block.caption}</figcaption>}
+    </figure>
+  )
+}
+
+function Welcome() {
+  return (
+    <Section id="welcome" heading={welcome.heading}>
+      <p className="welcome__lede">{welcome.lede}</p>
+
+      <div className="welcome__media">
+        <WelcomeVideo />
       </div>
+
+      <div className="welcome__letter">
+        {WELCOME_BLOCKS.map((block, i) =>
+          block.type === 'photo' ? (
+            <Photo block={block} index={block.photoIndex} key={`photo-${block.photoIndex}`} />
+          ) : (
+            // Paragraph text is stable copy, so the index is a safe key here.
+            <p key={`p-${i}`}>{block.text}</p>
+          ),
+        )}
+      </div>
+
+      <dl className="stats stats--row">
+        {welcome.stats.map((stat) => (
+          <div key={stat.label}>
+            <dt className="stat__value">{stat.value}</dt>
+            <dd className="stat__label">{stat.label}</dd>
+          </div>
+        ))}
+      </dl>
     </Section>
   )
 }
@@ -198,7 +277,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <About />
+        <Welcome />
         <Work />
         <News />
         <Links />

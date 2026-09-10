@@ -1,35 +1,124 @@
 // Single source of truth for site copy. Edit this file - the components read from it.
-// Anything marked TODO is unverified and needs confirming before launch.
+// Anything marked TODO is unverified or waiting on an asset.
+//
+// The welcome letter is Dr. Estin's own words. Where it disagrees with a directory
+// listing or a news write-up, the letter wins.
 
 export const site = {
   name: 'Dr. Norman Estin',
   handle: 'docmaui',
   domain: 'drestin.com',
-  tagline: 'Urgent care on Maui since 1987.',
+  tagline: 'Forty years of medicine on Maui.',
   intro:
-    'Founder and medical director of Doctors On Call, West Maui’s urgent care practice. ' +
-    'Fifty years in medicine, nearly forty of them on this island — emergency, travel, ' +
-    'sports and diving medicine, for the people who live here and the people visiting.',
+    'Internal medicine physician, family physician, and Medical Director of Doctors On Call ' +
+    'Urgent Care and Testing Centers — caring for West Maui’s residents and visitors since 1987.',
 }
 
-export const about = {
-  heading: 'About',
-  body: [
-    'Norman M. Estin, MD came to Maui in 1987 after practicing urgent care and outpatient ' +
-      'medicine in Boston, and built the island’s first urgent care program from scratch. ' +
-      'He has been a doctor for the West Maui community ever since.',
-    'He trained at the University of Rochester School of Medicine and Dentistry, interned at ' +
-      'the University of Wisconsin Hospitals and Clinics, and completed his residency at Legacy ' +
-      'Emanuel Medical Center in Portland. His fields are emergency, travel, sports and diving ' +
-      'medicine — he became a scuba instructor in his first three years here.',
-    'Off the clock he is usually on a sideline: team physician for Lahainaluna High School and ' +
-      'Maui Preparatory Academy, official tournament physician for the PGA Tournament of ' +
-      'Champions for two decades, and the doctor for the Maui Jim Maui Invitational.',
+export const welcome = {
+  heading: 'Welcome',
+  lede: 'Aloha! I’m Dr. Norman Estin.',
+
+  // Drop the file in public/media/ and put its path here. See public/media/README.md for
+  // specs. While src is null the page renders a labelled placeholder instead of the player.
+  video: {
+    src: null, // TODO: '/media/welcome.mp4'
+    poster: null, // TODO: '/media/welcome-poster.jpg'
+    captions: null, // TODO: '/media/welcome.vtt' - captions, not optional for a public site
+    label: 'Dr. Estin welcomes you',
+    // The letter below doubles as the transcript, so the video is never the only path to
+    // this content.
+  },
+
+  // Ordered blocks: 'p' is a paragraph, 'photo' drops an image into the flow.
+  blocks: [
+    {
+      type: 'p',
+      text:
+        'For 40 years, I’ve had the privilege of practicing medicine on Maui as an internal ' +
+        'medicine physician, family physician, and Medical Director of Doctors On Call Urgent ' +
+        'Care and Testing Centers. During that time, I’ve cared for hundreds of thousands of ' +
+        'residents and visitors while watching Maui—and especially West Maui—change and grow.',
+    },
+    {
+      type: 'p',
+      text:
+        'Just as importantly, I’ve become part of this remarkable community. I’ve gotten to ' +
+        'know generations of local families, community leaders, and hospitality workers who ' +
+        'have devoted their lives to welcoming and caring for others.',
+    },
+    {
+      type: 'p',
+      text:
+        'My career has taken me well beyond our clinics. I’ve served as a physician at ' +
+        'corporate, athletic, community, and state events. I’ve also had the privilege of ' +
+        'working with the PGA and the NCAA as medical director of the Kapalua Golf Tournaments ' +
+        'and the Maui Invitational Basketball Tournaments. Internationally, I’ve been an NBC ' +
+        'Olympic physician at multiple Olympic Games.',
+    },
+    {
+      type: 'photo',
+      src: null, // TODO: '/media/photo-1.jpg'
+      alt: '', // TODO: describe the photo for screen readers
+      caption: '', // optional
+      width: 'wide',
+    },
+    {
+      type: 'p',
+      text:
+        'About eight years ago, I remember thinking that after a lifetime in medicine, I had ' +
+        'experienced almost everything—except a major pandemic and a national disaster. I never ' +
+        'expected Maui and I would soon experience both.',
+    },
+    {
+      type: 'p',
+      text:
+        'COVID-19 came first. I worked alongside private and state medical organizations to ' +
+        'test, vaccinate, distribute vaccines, and care for those who became ill.',
+    },
+    {
+      type: 'p',
+      text:
+        'Then, in August 2023, came the devastating Maui wildfires. Our West Maui clinic was ' +
+        'fortunate to survive when so much of the surrounding community did not. We reopened as ' +
+        'quickly as possible and cared for the injured, the displaced, and those suffering from ' +
+        'smoke, ash, fire, and enormous personal loss.',
+    },
+    {
+      type: 'photo',
+      src: null, // TODO: '/media/photo-2.jpg'
+      alt: '', // TODO: describe the photo for screen readers
+      caption: '',
+      width: 'wide',
+    },
+    {
+      type: 'p',
+      text:
+        'Those days reinforced something I had learned over four decades here: on Maui, you ' +
+        'don’t simply practice medicine in a community—you become part of it.',
+    },
+    {
+      type: 'p',
+      text:
+        'At this point in my career, I’m also looking toward the next generation. Much of my ' +
+        'work now will focus on establishing and developing healthcare education and training ' +
+        'opportunities for Maui students, particularly at Lahainaluna High School, a school and ' +
+        'community I’ve been involved with for many years, especially as a Team Physician and ' +
+        'Advisor.',
+    },
+    {
+      type: 'p',
+      text:
+        'I’ll be working with a mentorship program that connects young people with ' +
+        'opportunities in healthcare. I’ve also begun a personal healthcare scholarship program ' +
+        'to encourage Maui students to pursue careers in medicine, nursing, and the many other ' +
+        'healthcare professions our community needs.',
+    },
   ],
+
   stats: [
-    { value: '1987', label: 'On Maui since' },
-    { value: '50+', label: 'Years in medicine' },
-    { value: 'Lahaina, HI', label: 'Based in' },
+    { value: '40', label: 'Years practicing on Maui' },
+    { value: 'PGA · NCAA', label: 'Tournament medical director' },
+    { value: 'Olympics', label: 'NBC Games physician' },
   ],
 }
 
@@ -39,23 +128,23 @@ export const work = {
     {
       title: 'Urgent care',
       body:
-        'Doctors On Call, in Kāʻanapali and at the Shops at Wailea. Walk-in urgent and family ' +
-        'medicine with on-site lab, X-ray, pharmacy and telemedicine — no appointment, residents ' +
-        'and visitors alike.',
+        'Medical Director of Doctors On Call Urgent Care and Testing Centers, in Kāʻanapali and ' +
+        'at the Shops at Wailea. Walk-in urgent and family medicine with on-site lab, X-ray and ' +
+        'telemedicine — residents and visitors alike.',
     },
     {
-      title: 'Sports & travel medicine',
+      title: 'Event & sports medicine',
       body:
-        'Two decades as tournament physician for the PGA Tournament of Champions, plus the Maui ' +
-        'Jim Maui Invitational and the West Maui schools. Dive and travel medicine for people a ' +
-        'long way from their own doctor.',
+        'Medical director of the Kapalua Golf Tournaments for the PGA and the Maui Invitational ' +
+        'Basketball Tournaments for the NCAA, an NBC Olympic physician at multiple Games, and ' +
+        'physician at corporate, community and state events.',
     },
     {
-      title: 'Community & media',
+      title: 'Education & the next generation',
       body:
-        'Public health education through the Lahaina News and CBS News Radio’s Eye on Travel, ' +
-        'community vaccination drives, and care for Lahaina fire survivors without insurance ' +
-        'after August 2023.',
+        'Healthcare education and training for Maui students, centered on Lahainaluna High ' +
+        'School — a mentorship program connecting young people to careers in healthcare, and a ' +
+        'personal scholarship program for students entering medicine and nursing.',
     },
   ],
 }
@@ -145,7 +234,8 @@ export const contact = {
   heading: 'Get in touch',
   body:
     'For appointments, walk-in hours and clinic locations, go through Doctors On Call — that is ' +
-    'the fastest way to be seen. Media and speaking requests can come here.',
+    'the fastest way to be seen. Media, speaking, mentorship and scholarship enquiries can come ' +
+    'here.',
   email: null, // TODO: e.g. 'hello@drestin.com'
   practiceUrl: 'https://doctorsoncallmaui.com/',
   // TODO: directory listings still show the pre-fire Lahaina address and number. The clinics
