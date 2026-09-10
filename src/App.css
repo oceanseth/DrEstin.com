@@ -322,3 +322,85 @@ a.linklist__row:hover {
   font-size: 0.85rem;
   color: var(--text-dim);
 }
+
+/* ---- news ---- */
+.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  border-top: 1px solid var(--border);
+}
+
+.news__item {
+  border-bottom: 1px solid var(--border);
+}
+
+.news__link {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.4rem 2rem 1.4rem 0.25rem;
+  text-decoration: none;
+  position: relative;
+  transition:
+    padding-left 0.2s ease,
+    background 0.2s ease;
+}
+
+.news__link:hover {
+  padding-left: 0.9rem;
+  background: var(--surface);
+}
+
+/* Outbound arrow. Every item here links off-site, so it is decorative, not a state. */
+.news__link::after {
+  content: '\2197';
+  position: absolute;
+  top: 1.35rem;
+  right: 0.6rem;
+  color: var(--text-dim);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.news__link:hover::after {
+  transform: translate(2px, -2px);
+  color: var(--coral);
+}
+
+.news__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.news__source {
+  color: var(--ocean-200);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  letter-spacing: 0.03em;
+}
+
+.news__title {
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-weight: 570;
+  max-width: 46ch;
+  transition: color 0.2s ease;
+}
+
+.news__link:hover .news__title {
+  color: var(--ocean-200);
+}
+
+.news__blurb {
+  color: var(--text-dim);
+  font-size: 0.97rem;
+  max-width: var(--measure);
+}
