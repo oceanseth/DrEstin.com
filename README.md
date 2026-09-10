@@ -22,6 +22,25 @@ page shows a dashed placeholder in that spot rather than a broken image.
 `npm run check:media` verifies every referenced file exists and that photos with a `src` also
 have `alt` text. `npm run deploy` runs it first and refuses to ship if it fails.
 
+## Checking DNS delegation
+
+```sh
+npm run check:dns              # one pass
+npm run check:dns -- --watch   # re-check every 60s until delegated (capped at 2h)
+```
+
+Three layers, checked in order, because they fail differently:
+
+1. **Registrar (RDAP)** — has GoDaddy actually recorded the change? If this still shows
+   `domaincontrol.com` half an hour after saving, the change did not take.
+2. **Registry (`.com` TLD servers)** — the source of truth for delegation. Flips within
+   minutes of the registrar pushing.
+3. **Public resolvers** — Google, Cloudflare, Quad9. These lag by whatever is left of the
+   old TTL. Stale resolvers with a correct registry are normal and need no action.
+
+ACM validation only needs step 2. Once the registry is right, `npm run infra:site` will work
+even while resolvers are still stale.
+
 ## Infrastructure
 
 Two stacks in `us-east-1` (CloudFront requires its ACM cert there):
