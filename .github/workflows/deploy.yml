@@ -20,9 +20,12 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: https://drestin.com
+    # Deliberately no `environment:` here. Declaring one rewrites the OIDC subject claim from
+    # repo:OWNER/REPO:ref:refs/heads/main to repo:OWNER/REPO:environment:NAME, which stops
+    # matching the role's trust policy in infra/cicd.yml and fails with "Not authorized to
+    # perform sts:AssumeRoleWithWebIdentity". If you want the environment back, change the
+    # trust policy's sub to the environment form AND set a deployment branch rule on the
+    # environment - otherwise any branch could assume the role via workflow_dispatch.
     steps:
       - uses: actions/checkout@v4
 

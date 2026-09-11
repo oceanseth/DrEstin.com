@@ -99,6 +99,19 @@ This is a physician's site. Accuracy is not a style preference here.
 - `npm run check:dns` diagnoses delegation across the registrar, the registry, and public
   resolvers.
 
+## Gotcha: the OIDC trust policy is exact
+
+The deploy role's trust policy pins the OIDC `sub` claim to
+`repo:oceanseth/DrEstin.com:ref:refs/heads/main`. Anything that changes the shape of that
+claim breaks the deploy with `Not authorized to perform sts:AssumeRoleWithWebIdentity`.
+
+The one that bites: **adding `environment:` to the deploy job** rewrites the subject to
+`repo:oceanseth/DrEstin.com:environment:NAME`. It looks unrelated to auth, and it is not
+mentioned in the error. Do not add it without also changing the `sub` in `infra/cicd.yml` and
+setting a deployment branch rule on the environment.
+
+Renaming the repo or the default branch breaks it the same way.
+
 ## Things not to do
 
 - Do not make the S3 bucket public.
