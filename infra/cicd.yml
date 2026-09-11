@@ -8,10 +8,20 @@ Parameters:
   Environment:
     Type: String
     Default: prod
-  GitHubRepo:
+  GitHubOwner:
     Type: String
-    Default: oceanseth/DrEstin.com
-    Description: owner/repo allowed to assume this role.
+    Default: oceanseth
+  GitHubOwnerId:
+    Type: String
+    Default: "63625290"
+    Description: Numeric GitHub user id. gh api users/<owner> --jq .id
+  GitHubRepoName:
+    Type: String
+    Default: DrEstin.com
+  GitHubRepoId:
+    Type: String
+    Default: "1363667474"
+    Description: Numeric repo id. gh api repos/<owner>/<repo> --jq .id
   GitHubBranch:
     Type: String
     Default: main
@@ -24,7 +34,7 @@ Resources:
     Type: AWS::IAM::Role
     Properties:
       RoleName: !Sub "${ProjectName}-github-deploy-${Environment}"
-      Description: !Sub "Lets GitHub Actions in ${GitHubRepo} deploy the ${ProjectName} site."
+      Description: !Sub "Lets GitHub Actions in ${GitHubOwner}/${GitHubRepoName} deploy the ${ProjectName} site."
       MaxSessionDuration: 3600
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
@@ -38,7 +48,17 @@ Resources:
                 # Audience must be sts, and the subject pins both repo AND branch. Without
                 # the sub condition, any repo on GitHub could assume this role.
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
-                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubRepo}:ref:refs/heads/${GitHubBranch}"
+                # Two exact subjects, not a wildcard - StringEquals with a list means "any of
+                # these". This repo currently sends GitHub's *immutable* subject, which
+                # suffixes the owner and repo with their numeric ids
+                # (repo:owner@123/repo@456:ref:...) so that renaming either cannot be used to
+                # hijack the role. That behaviour is a GitHub-side setting, so the plain form
+                # is listed too and the role keeps working if it is ever turned off.
+                # A wildcard like repo:oceanseth*/... would also match oceanseth-evil, so
+                # both entries stay fully literal.
+                token.actions.githubusercontent.com:sub:
+                  - !Sub "repo:${GitHubOwner}@${GitHubOwnerId}/${GitHubRepoName}@${GitHubRepoId}:ref:refs/heads/${GitHubBranch}"
+                  - !Sub "repo:${GitHubOwner}/${GitHubRepoName}:ref:refs/heads/${GitHubBranch}"
       Policies:
         - PolicyName: deploy-site
           PolicyDocument:

@@ -101,16 +101,33 @@ This is a physician's site. Accuracy is not a style preference here.
 
 ## Gotcha: the OIDC trust policy is exact
 
-The deploy role's trust policy pins the OIDC `sub` claim to
-`repo:oceanseth/DrEstin.com:ref:refs/heads/main`. Anything that changes the shape of that
-claim breaks the deploy with `Not authorized to perform sts:AssumeRoleWithWebIdentity`.
+The deploy role's trust policy matches the OIDC `sub` claim literally. Anything that changes
+the shape of that claim breaks the deploy with `Not authorized to perform
+sts:AssumeRoleWithWebIdentity` — an error that names no claim and gives no hint which part
+mismatched.
 
-The one that bites: **adding `environment:` to the deploy job** rewrites the subject to
-`repo:oceanseth/DrEstin.com:environment:NAME`. It looks unrelated to auth, and it is not
-mentioned in the error. Do not add it without also changing the `sub` in `infra/cicd.yml` and
-setting a deployment branch rule on the environment.
+This repo sends GitHub's **immutable** subject, which suffixes owner and repo with their
+numeric ids:
 
-Renaming the repo or the default branch breaks it the same way.
+```
+repo:oceanseth@63625290/DrEstin.com@1363667474:ref:refs/heads/main
+```
+
+not the plain `repo:oceanseth/DrEstin.com:ref:refs/heads/main` that most documentation shows.
+`infra/cicd.yml` lists both literal forms (`StringEquals` with a list means "any of these"), so
+it works whichever GitHub sends. Do not replace them with a wildcard: `repo:oceanseth*/...`
+would also match an account named `oceanseth-evil`.
+
+Two other things change the claim and will break auth the same way:
+
+- **Adding `environment:` to the deploy job** rewrites the subject to
+  `repo:...:environment:NAME`. Do not add it without updating the `sub` in `infra/cicd.yml`
+  and setting a deployment branch rule on the environment.
+- **Renaming the repo, the owner, or the default branch.**
+
+To see what GitHub is actually sending, add a step before the credentials step that requests
+the token and prints only `sub`/`aud`/`repository`/`ref` — never the token itself — then
+remove it once fixed.
 
 ## Things not to do
 
