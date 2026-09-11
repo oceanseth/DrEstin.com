@@ -1,38 +1,31 @@
 #!/bin/sh
-# Ships the site when main is pushed.
+# Guards main. Does NOT deploy - GitHub Actions does that, after the push lands.
 #
-# git has no post-push hook, so this runs *before* the refs land on the remote. A failing
-# build therefore aborts the push, which is what we want - broken main never leaves the
-# machine. The deploy itself running before the push is the tradeoff: if the push is then
-# rejected (say, a race with someone else's commit), S3 is briefly ahead of origin/main.
-# Re-pushing reconciles it.
+# This used to ship the site itself. It no longer does: deploying from a developer's laptop
+# meant the deploy depended on who pushed and from where, and it ran *before* the refs
+# reached the remote. Now the only job here is to stop a broken build from ever becoming
+# origin/main, which is cheaper to catch in three seconds locally than in CI.
 #
-# Escape hatch: SKIP_DEPLOY=1 git push
+# Escape hatch: SKIP_CHECKS=1 git push
 set -e
 
-[ "$SKIP_DEPLOY" = "1" ] && { echo "pre-push: SKIP_DEPLOY=1, not shipping."; exit 0; }
+[ "$SKIP_CHECKS" = "1" ] && { echo "pre-push: SKIP_CHECKS=1, not verifying."; exit 0; }
 
-STACK=drestin-site-prod
-REGION=us-east-1
 ZEROS=0000000000000000000000000000000000000000
 pushing_main=0
 
 # stdin: <local ref> <local sha> <remote ref> <remote sha>
 while read -r _local_ref local_sha remote_ref _remote_sha; do
   [ "$remote_ref" = "refs/heads/main" ] || continue
-  [ "$local_sha" = "$ZEROS" ] && continue   # branch deletion, nothing to build
+  [ "$local_sha" = "$ZEROS" ] && continue   # branch deletion, nothing to verify
   pushing_main=1
 done
 
 [ "$pushing_main" = "1" ] || exit 0
 
-# The site stack has to exist before deploy.mjs can read the bucket name from it. Warn
-# rather than block, so the repo is still pushable before the infrastructure is up.
-if ! aws cloudformation describe-stacks --stack-name "$STACK" --region "$REGION" >/dev/null 2>&1; then
-  echo "pre-push: stack $STACK not found - pushing without shipping."
-  echo "          run 'npm run infra:site' once drestin.com is delegated to Route 53."
-  exit 0
-fi
+echo "pre-push: verifying before main..."
+npm run lint
+npm run check:media
+npm run build
 
-echo "pre-push: building and shipping to drestin.com ..."
-npm run deploy
+echo "pre-push: ok - GitHub Actions will deploy once this lands."

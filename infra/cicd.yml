@@ -1,0 +1,87 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Deploy role for GitHub Actions, assumed over OIDC. No long-lived keys.
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: drestin
+  Environment:
+    Type: String
+    Default: prod
+  GitHubRepo:
+    Type: String
+    Default: oceanseth/DrEstin.com
+    Description: owner/repo allowed to assume this role.
+  GitHubBranch:
+    Type: String
+    Default: main
+    Description: Only this branch may assume the role. Pushes elsewhere get nothing.
+
+Resources:
+  # The account already has the token.actions.githubusercontent.com OIDC provider (shared
+  # with other projects), so this references it rather than creating a second one.
+  DeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${ProjectName}-github-deploy-${Environment}"
+      Description: !Sub "Lets GitHub Actions in ${GitHubRepo} deploy the ${ProjectName} site."
+      MaxSessionDuration: 3600
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Sub "arn:aws:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com"
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                # Audience must be sts, and the subject pins both repo AND branch. Without
+                # the sub condition, any repo on GitHub could assume this role.
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubRepo}:ref:refs/heads/${GitHubBranch}"
+      Policies:
+        - PolicyName: deploy-site
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              # deploy.mjs reads the bucket name and distribution id from the stack outputs.
+              - Sid: ReadStackOutputs
+                Effect: Allow
+                Action: cloudformation:DescribeStacks
+                Resource: !Sub "arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/${ProjectName}-site-${Environment}/*"
+
+              - Sid: ListSiteBucket
+                Effect: Allow
+                Action: s3:ListBucket
+                Resource:
+                  !Sub
+                    - "arn:aws:s3:::${Bucket}"
+                    - Bucket: !ImportValue drestin-site-bucket-prod
+
+              - Sid: WriteSiteObjects
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:DeleteObject
+                Resource:
+                  !Sub
+                    - "arn:aws:s3:::${Bucket}/*"
+                    - Bucket: !ImportValue drestin-site-bucket-prod
+
+              - Sid: InvalidateDistribution
+                Effect: Allow
+                Action:
+                  - cloudfront:CreateInvalidation
+                  - cloudfront:GetInvalidation
+                Resource:
+                  !Sub
+                    - "arn:aws:cloudfront::${AWS::AccountId}:distribution/${Dist}"
+                    - Dist: !ImportValue drestin-distribution-id-prod
+
+Outputs:
+  DeployRoleArn:
+    Description: Set as AWS_DEPLOY_ROLE in the workflow.
+    Value: !GetAtt DeployRole.Arn
+    Export:
+      Name: !Sub "${ProjectName}-github-deploy-role-${Environment}"

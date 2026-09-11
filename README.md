@@ -67,29 +67,32 @@ npm run deploy       # 4. build, sync to S3, invalidate
 
 ## Deploys
 
-`npm run deploy` builds, syncs `dist/` to the bucket, and invalidates the distribution.
-Hashed assets are uploaded `immutable` for a year; `index.html`, `robots.txt` and
-`sitemap.xml` are uploaded `must-revalidate` so a deploy is visible immediately.
+**Pushing `main` deploys the site.** GitHub Actions
+([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) lints, checks media, builds,
+syncs `dist/` to S3, invalidates CloudFront, and then smoke-tests the live site. Hashed assets
+upload `immutable` for a year; `index.html`, `robots.txt` and `sitemap.xml` upload
+`must-revalidate` so a deploy is visible immediately.
+
+It authenticates over OIDC using the role in `infra/cicd.yml`, whose trust policy is pinned to
+this repo and the `main` branch. There are no AWS keys stored in GitHub.
+
+```sh
+git push                                   # deploys
+gh run watch                               # follow it
+npm run verify:live                        # smoke-test the live site yourself
+```
+
+`npm run deploy:local` still exists for when Actions is down, but it bypasses the CI checks and
+makes the live site diverge from `origin/main` — avoid it unless you need it.
 
 ## Shipping
 
-Pushing `main` builds and deploys automatically, via the tracked
-[`.githooks/pre-push`](.githooks/pre-push) hook. The hook lives in the repo rather than
-`.git/hooks` so it is reviewable, which means a fresh clone has to opt in once:
+The tracked [`.githooks/pre-push`](.githooks/pre-push) hook runs `lint`, `check:media` and
+`build` before a push to `main`, so a broken build never becomes `origin/main`. It no longer
+deploys. A fresh clone has to opt in once:
 
 ```sh
 git config core.hooksPath .githooks
 ```
 
-git has no post-push hook, so this runs *before* the refs reach the remote — a failing
-build aborts the push, and broken `main` never leaves the machine. The tradeoff is that
-the deploy also happens before the push, so a rejected push (a race with another commit)
-can leave S3 briefly ahead of `origin/main`; re-pushing reconciles it.
-
-Pushes to any other branch do nothing. If the `drestin-site-prod` stack does not exist
-yet, the hook says so and lets the push through rather than blocking it. To push `main`
-without shipping:
-
-```sh
-SKIP_DEPLOY=1 git push
-```
+Pushes to other branches do nothing. `SKIP_CHECKS=1 git push` bypasses the hook.

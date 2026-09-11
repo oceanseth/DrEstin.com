@@ -1,0 +1,54 @@
+name: Deploy
+
+# Every commit that lands on main ships - pushed from any machine, merged from a PR, or
+# committed through the GitHub web UI. Nothing runs locally.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # lets you re-deploy the current main by hand from the Actions tab
+
+# Only one deploy at a time. A second push while one is running waits rather than racing
+# it, so the bucket can't end up with a mix of two builds.
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+permissions:
+  id-token: write # required to request the OIDC token AWS trusts
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://drestin.com
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Check media references
+        run: npm run check:media
+
+      - name: Build
+        run: npm run build
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::218827615080:role/drestin-github-deploy-prod
+          aws-region: us-east-1
+
+      - name: Sync to S3 and invalidate
+        run: node scripts/deploy.mjs
+
+      - name: Verify the live site
+        run: node scripts/verify-live.mjs
