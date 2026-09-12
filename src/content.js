@@ -6,7 +6,7 @@
 
 export const site = {
   name: 'Dr. Norman Estin',
-  handle: 'docmaui',
+  handle: 'DocMaui',
   domain: 'drestin.com',
   tagline: 'Forty years of medicine on Maui.',
   intro:
@@ -57,8 +57,8 @@ export const welcome = {
     },
     {
       type: 'photo',
-      src: null, // TODO: '/media/photo-1.jpg'
-      alt: '', // TODO: describe the photo for screen readers
+      src: '/media/clinic-collage.jpg',
+      alt: 'Two Doctors On Call urgent care clinic storefronts with an inset portrait of Dr. Norman Estin wearing burgundy scrubs.',
       caption: '', // optional
       width: 'wide',
     },
@@ -85,8 +85,8 @@ export const welcome = {
     },
     {
       type: 'photo',
-      src: null, // TODO: '/media/photo-2.jpg'
-      alt: '', // TODO: describe the photo for screen readers
+      src: '/media/clinic-portrait.jpg',
+      alt: 'Dr. Norman Estin standing outside the Doctors On Call urgent care and testing center.',
       caption: '',
       width: 'wide',
     },
@@ -225,8 +225,8 @@ export const links = {
       handle: 'Norman Estin',
       href: 'https://www.linkedin.com/in/norman-estin-742113184/',
     },
-    { label: 'Instagram', handle: '@docmaui', href: null }, // TODO: real URL
-    { label: 'YouTube', handle: '@docmaui', href: null }, // TODO: real URL
+    { label: 'Instagram', handle: '@DocMaui', href: null }, // TODO: real URL
+    { label: 'YouTube', handle: '@DocMaui', href: null }, // TODO: real URL
   ],
 }
 

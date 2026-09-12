@@ -103,7 +103,7 @@ Resources:
     Properties:
       DistributionConfig:
         Enabled: true
-        Comment: !Sub "Dr Estin / docmaui (${Environment})"
+        Comment: !Sub "Dr Estin / DocMaui (${Environment})"
         HttpVersion: http2and3
         IPV6Enabled: true
         Aliases:

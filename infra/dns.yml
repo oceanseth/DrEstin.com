@@ -13,7 +13,7 @@ Resources:
     Properties:
       Name: !Ref DomainName
       HostedZoneConfig:
-        Comment: Dr Estin / docmaui
+        Comment: Dr Estin / DocMaui
 
 Outputs:
   HostedZoneId:

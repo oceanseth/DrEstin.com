@@ -1,6 +1,6 @@
 # drestin.com
 
-Vite + React site for Dr. Estin ("docmaui"), served from S3 behind CloudFront.
+Vite + React site for Dr. Estin ("DocMaui"), served from S3 behind CloudFront.
 
 ## Local
 
