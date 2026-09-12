@@ -264,6 +264,7 @@ export const scholarship = {
   address: ['Lahainaluna High School - College and Career Center', '980 Lahainaluna Road', 'Lahaina, HI 96761'],
   checkInstructions: 'Please make checks payable to Lahainaluna High School Foundation and note "Dr. Norman Estin Scholarship Fund" in the memo line.',
   contactHeading: 'For more information, please contact:',
-  contactName: 'Art Fillazar',
+  contactName: 'Art Filazar',
+  contactEmail: 'lhsf08@yahoo.com',
   contactTitle: 'LHS Foundation Executive Director',
 }

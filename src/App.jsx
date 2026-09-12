@@ -317,7 +317,10 @@ function Scholarship() {
           <address>{scholarship.address.map((line) => <div key={line}>{line}</div>)}</address>
           <p>{scholarship.checkInstructions}</p>
           <h3>{scholarship.contactHeading}</h3>
-          <p>{scholarship.contactName}<br />{scholarship.contactTitle}</p>
+          <p>
+            {scholarship.contactName}<br />{scholarship.contactTitle}<br />
+            <a href={`mailto:${scholarship.contactEmail}`}>{scholarship.contactEmail}</a>
+          </p>
         </div>
       </Section>
     </>
