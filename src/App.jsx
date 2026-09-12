@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { contact, links, news, site, welcome, work } from './content'
+import { contact, links, news, scholarship, site, welcome, work } from './content'
 import './App.css'
 
 const NAV = [
@@ -9,6 +9,7 @@ const NAV = [
   { href: '#links', label: 'Find me' },
   { href: '#contact', label: 'Contact' },
 ]
+const IS_SCHOLARSHIP = ['/scholarship', '/scholarship/', '/page-3', '/page-3/'].includes(window.location.pathname)
 
 // Number the photo blocks once up front, so a placeholder can name the file it wants
 // without counting during render.
@@ -38,15 +39,16 @@ function Nav() {
 
   return (
     <header className="nav shell" data-stuck={stuck}>
-      <a className="nav__mark" href="#top">
+      <a className="nav__mark" href={IS_SCHOLARSHIP ? '/' : '#top'}>
         {site.name} <span>/ {site.handle}</span>
       </a>
       <nav className="nav__links" aria-label="Sections">
         {NAV.map((item) => (
-          <a key={item.href} href={item.href}>
+          <a key={item.href} href={IS_SCHOLARSHIP ? `/${item.href}` : item.href}>
             {item.label}
           </a>
         ))}
+        <a href="/scholarship" aria-current={IS_SCHOLARSHIP ? 'page' : undefined}>{scholarship.navLabel}</a>
       </nav>
     </header>
   )
@@ -71,6 +73,7 @@ function Hero() {
         <a className="btn btn--ghost" href="#welcome">
           Read the story
         </a>
+        <a className="btn btn--ghost" href="/scholarship">{scholarship.navLabel}</a>
       </div>
     </section>
   )
@@ -290,17 +293,54 @@ function Contact() {
   )
 }
 
+function Scholarship() {
+  return (
+    <>
+      <section className="hero shell scholarship" id="top">
+        <h1>{scholarship.heading}</h1>
+        <p className="hero__intro">{scholarship.lede}</p>
+        <div className="welcome__letter">
+          {scholarship.paragraphs.map((text) => <p key={text}>{text}</p>)}
+        </div>
+        <div className="hero__actions">
+          <a className="btn btn--primary" href="#give-now">{scholarship.giveLabel}</a>
+        </div>
+      </section>
+      <Section id="give-now" heading={scholarship.giveLabel}>
+        <div className="welcome__letter scholarship__details">
+          <p>{scholarship.donationIntro}</p>
+          {scholarship.donationUrl ? (
+            <a className="btn btn--primary" href={scholarship.donationUrl} target="_blank" rel="noopener noreferrer">{scholarship.giveLabel}</a>
+          ) : <p className="contact__note">{scholarship.pendingLabel}</p>}
+          <p>{scholarship.taxNote}</p>
+          <h3>{scholarship.mailHeading}</h3>
+          <address>{scholarship.address.map((line) => <div key={line}>{line}</div>)}</address>
+          <p>{scholarship.checkInstructions}</p>
+          <h3>{scholarship.contactHeading}</h3>
+          <p>{scholarship.contactName}<br />{scholarship.contactTitle}</p>
+        </div>
+      </Section>
+    </>
+  )
+}
+
 export default function App() {
+  useEffect(() => {
+    document.title = IS_SCHOLARSHIP ? `${scholarship.heading} · DocMaui` : 'Dr. Norman Estin · DocMaui'
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', `https://drestin.com${IS_SCHOLARSHIP ? '/scholarship' : '/'}`)
+  }, [])
   return (
     <>
       <Nav />
       <main>
+        {IS_SCHOLARSHIP ? <Scholarship /> : <>
         <Hero />
         <Welcome />
         <Work />
         <News />
         <Links />
         <Contact />
+        </>}
       </main>
       <footer className="footer shell">
         <span>

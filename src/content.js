@@ -246,3 +246,24 @@ export const contact = {
     'This site is informational only. It is not medical advice and does not create a ' +
     'doctor-patient relationship. If this is an emergency, call 911.',
 }
+
+export const scholarship = {
+  navLabel: 'Scholarship',
+  heading: 'Support the Future of Healthcare on Maui',
+  lede: 'Join Dr. Norman Estin in supporting the next generation of healthcare professionals on Maui.',
+  paragraphs: [
+    'The Dr. Norman Estin Healthcare Scholarship Fund is a unique, physician-sponsored scholarship fund specifically directed toward developing and supporting Lahainaluna High School students pursuing education and careers in healthcare professions.',
+    'Your contribution helps local students achieve their educational goals and prepare for a future in healthcare, strengthening the future of healthcare on Maui.',
+  ],
+  giveLabel: 'GIVE NOW',
+  donationUrl: null, // TODO: Fund-specific contribution URL from Dr. Estin.
+  donationIntro: 'Make a secure online contribution to the Dr. Norman Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
+  pendingLabel: 'Online giving link coming soon. You can contribute by mail below.',
+  taxNote: 'Contributions to the Dr. Norman Estin Healthcare Scholarship Fund are administered through the Lahainaluna High School Foundation, a 501(c)(3) organization. All donations to this fund are tax deductible.',
+  mailHeading: 'To contribute by mail, please send your donation to:',
+  address: ['Lahainaluna High School - College and Career Center', '980 Lahainaluna Road', 'Lahaina, HI 96761'],
+  checkInstructions: 'Please make checks payable to Lahainaluna High School Foundation and note "Dr. Norman Estin Scholarship Fund" in the memo line.',
+  contactHeading: 'For more information, please contact:',
+  contactName: 'Art Fillazar',
+  contactTitle: 'LHS Foundation Executive Director',
+}

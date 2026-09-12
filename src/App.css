@@ -4,6 +4,12 @@
   padding-inline: var(--gutter);
 }
 
+.scholarship h1 { max-width: 16ch; }
+.scholarship__details { margin-top: 0; }
+.scholarship__details address { font-style: normal; line-height: 1.8; }
+.scholarship__details .btn { justify-self: start; }
+.nav__links { flex-wrap: wrap; }
+
 /* ---- header ---- */
 .nav {
   position: sticky;
