@@ -256,7 +256,7 @@ export const scholarship = {
     'Your contribution helps local students achieve their educational goals and prepare for a future in healthcare, strengthening the future of healthcare on Maui.',
   ],
   giveLabel: 'GIVE NOW',
-  donationUrl: null, // TODO: Fund-specific contribution URL from Dr. Estin.
+  donationUrl: 'https://secure.etransfer.com/eft/flexblockcode/donation1.cfm?d2org=LHSF&d2tool=donate',
   donationIntro: 'Make a secure online contribution to the Dr. Norman Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
   pendingLabel: 'Online giving link coming soon. You can contribute by mail below.',
   taxNote: 'Contributions to the Dr. Norman Estin Healthcare Scholarship Fund are administered through the Lahainaluna High School Foundation, a 501(c)(3) organization. All donations to this fund are tax deductible.',

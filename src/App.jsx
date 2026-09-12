@@ -303,7 +303,7 @@ function Scholarship() {
           {scholarship.paragraphs.map((text) => <p key={text}>{text}</p>)}
         </div>
         <div className="hero__actions">
-          <a className="btn btn--primary" href="#give-now">{scholarship.giveLabel}</a>
+          <a className="btn btn--primary" href={scholarship.donationUrl || '#give-now'} target={scholarship.donationUrl ? '_blank' : undefined} rel={scholarship.donationUrl ? 'noopener noreferrer' : undefined}>{scholarship.giveLabel}</a>
         </div>
       </section>
       <Section id="give-now" heading={scholarship.giveLabel}>
