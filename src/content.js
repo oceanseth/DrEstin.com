@@ -21,6 +21,8 @@ export const welcome = {
   // Drop the file in public/media/ and put its path here. See public/media/README.md for
   // specs. While src is null the page renders a labelled placeholder instead of the player.
   video: {
+    embedUrl: 'https://masky.ai/live/c-26-09-ybmr',
+    externalLabel: 'Open Dr. Estin’s welcome on Masky',
     src: null, // TODO: '/media/welcome.mp4'
     poster: null, // TODO: '/media/welcome-poster.jpg'
     captions: null, // TODO: '/media/welcome.vtt' - captions, not optional for a public site

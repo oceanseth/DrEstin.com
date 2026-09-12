@@ -97,7 +97,26 @@ function Placeholder({ ratio, label, hint }) {
 }
 
 function WelcomeVideo() {
-  const { src, poster, captions, label } = welcome.video
+  const { src, poster, captions, label, embedUrl, externalLabel } = welcome.video
+
+  if (embedUrl) {
+    return (
+      <div>
+        <iframe
+          className="welcome__video welcome__embed"
+          src={embedUrl}
+          title={label}
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        />
+        <p>
+          <a href={embedUrl} target="_blank" rel="noopener noreferrer">
+            {externalLabel}
+          </a>
+        </p>
+      </div>
+    )
+  }
 
   if (!src) {
     return (

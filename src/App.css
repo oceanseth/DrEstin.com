@@ -431,6 +431,10 @@ a.linklist__row:hover {
   display: block;
 }
 
+.welcome__embed {
+  aspect-ratio: 16 / 9;
+}
+
 .welcome__letter {
   display: grid;
   gap: 1.35rem;
