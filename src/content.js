@@ -238,6 +238,10 @@ export const welcome = {
   "label": "Maui wildfire response photographs and images",
   "photos": [
     {
+      "src": "/media/wildfires/lahaina-fire-aftermath-ocean.jpeg",
+      "alt": "Fire-damaged buildings and trees in Lahaina, with a tall smokestack still standing and boats on the ocean beyond."
+    },
+    {
       "src": "/media/wildfires/wildfire-01.jpeg",
       "alt": "A man photographing a burned vehicle amid wildfire debris."
     },
