@@ -486,6 +486,10 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-25.jpeg",
       "alt": "Lahainaluna supporters in stadium seats holding handmade signs and making shaka gestures."
+    },
+    {
+      "src": "/media/lahainaluna/team-26.jpeg",
+      "alt": "Three smiling Lahainaluna supporters seated in stadium bleachers at night, with a man making a shaka gesture in the foreground."
     }
   ]
 }
