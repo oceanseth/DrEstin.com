@@ -49,13 +49,6 @@
 .scholarship__details { margin-top: 0; }
 .scholarship__details .btn { justify-self: start; }
 .scholarship__details address { font-style: normal; }
-.news { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
-.news__item { border-top: 1px solid var(--border); }
-.news__link { display: grid; gap: 1rem; text-decoration: none; padding-block: 1.5rem; }
-.news__link:hover .news__title { text-decoration: underline; }
-.news__meta { display: flex; flex-wrap: wrap; gap: .6rem; font-size: .75rem; color: var(--text-dim); }
-.news__title { font-size: 1.3rem; }
-.news__blurb { font-size: 1rem; }
 .linklist { display: grid; border-top: 1px solid var(--border); }
 .linklist__row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--border); text-decoration: none; }
 a.linklist__row:hover { text-decoration: underline; }
@@ -69,7 +62,7 @@ a.linklist__row:hover { text-decoration: underline; }
 .placeholder { padding: 2rem; background: var(--surface); display: grid; place-content: center; border: 1px dashed var(--accent); border-radius: 1rem; }
 .placeholder__hint { font-size: .85rem; }
 @media (max-width: 62rem) { .nav { align-items: start; flex-direction: column; gap: 1rem; } .hero--coastal { gap: 2rem; } }
-@media (max-width: 47.5rem) { .hero--coastal, .welcome__overview, .cards, .news { grid-template-columns: 1fr; } .hero { padding-block: 2.5rem; } .hero__portrait img { height: auto; max-height: 36rem; object-fit: contain; } .nav__links { gap: .4rem 1rem; } .nav__links a { min-height: 44px; display: inline-flex; align-items: center; } .stats { grid-template-columns: 1fr; } .welcome__overview { gap: 2rem; } .linklist__row { flex-wrap: wrap; } }
+@media (max-width: 47.5rem) { .hero--coastal, .welcome__overview, .cards { grid-template-columns: 1fr; } .hero { padding-block: 2.5rem; } .hero__portrait img { height: auto; max-height: 36rem; object-fit: contain; } .nav__links { gap: .4rem 1rem; } .nav__links a { min-height: 44px; display: inline-flex; align-items: center; } .stats { grid-template-columns: 1fr; } .welcome__overview { gap: 2rem; } .linklist__row { flex-wrap: wrap; } }
 
 .team-advisor { margin-top: 3rem; padding-top: 3rem; border-top: 1px solid var(--border); }
 .team-advisor h2 { font-size: clamp(2rem, 3.7vw, 3.1rem); margin-bottom: 1.4rem; }

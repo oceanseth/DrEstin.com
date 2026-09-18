@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-import { contact, links, news, scholarship, site, teamAdvisor, tournament, welcome, work } from './content'
+import { contact, links, scholarship, site, teamAdvisor, tournament, welcome, work } from './content'
 import './App.css'
 
 const NAV = [
   { href: '#welcome', label: 'Welcome' },
   { href: '#work', label: 'What I do' },
-  { href: '#news', label: 'News' },
   { href: '#links', label: 'Find me' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -20,12 +19,6 @@ const WELCOME_BLOCKS = (() => {
   )
 })()
 
-const DATE_FMT = new Intl.DateTimeFormat('en-US', {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-  timeZone: 'UTC', // dates are bare YYYY-MM-DD; UTC keeps them off a day boundary
-})
 
 function Nav() {
   const [stuck, setStuck] = useState(false)
@@ -266,27 +259,6 @@ function ScholarshipFeature() {
   )
 }
 
-function News() {
-  return (
-    <Section id="news" heading={news.heading}>
-      <ol className="news">
-        {news.items.map((item) => (
-          <li className="news__item" key={item.href}>
-            <a className="news__link" href={item.href} target="_blank" rel="noreferrer">
-              <div className="news__meta">
-                <time dateTime={item.date}>{DATE_FMT.format(new Date(item.date))}</time>
-                <span className="news__source">{item.source}</span>
-              </div>
-              <h3 className="news__title">{item.title}</h3>
-              <p className="news__blurb">{item.blurb}</p>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </Section>
-  )
-}
-
 function Links() {
   return (
     <Section id="links" heading={links.heading}>
@@ -303,7 +275,7 @@ function Links() {
               className="linklist__row"
               key={item.label}
               href={item.href}
-              target="_blank"
+              target={item.href.startsWith('mailto:') ? undefined : '_blank'}
               rel="me noreferrer"
             >
               {body}
@@ -393,7 +365,6 @@ export default function App() {
         <Welcome />
         <Work />
         <ScholarshipFeature />
-        <News />
         <Links />
         <Contact />
         </>}
