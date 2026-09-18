@@ -541,6 +541,26 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-22.jpeg",
       "alt": "A group posing on a golf course around a golfer holding a trophy and wearing a lei."
+    },
+    {
+      "src": "/media/tournaments/tournament-23.jpeg",
+      "alt": "USA and Germany tennis team members wearing leis and posing with performers beside a Fed Cup sign overlooking the ocean."
+    },
+    {
+      "src": "/media/tournaments/tournament-24.jpeg",
+      "alt": "A man in a red polo and a USA Fed Cup team member wearing a lei making shaka gestures by the ocean."
+    },
+    {
+      "src": "/media/tournaments/tournament-25.jpeg",
+      "alt": "A hand holding a 2017 USA versus Germany Fed Cup event badge with a portrait and USTA Events label."
+    },
+    {
+      "src": "/media/tournaments/tournament-26.jpeg",
+      "alt": "Tennis players and a camera crew on a Fed Cup court with an American flag and spectators in the stands."
+    },
+    {
+      "src": "/media/tournaments/tournament-27.jpeg",
+      "alt": "A hand holding a 2017 Doctors On Call medical credential with a portrait of Dr. Estin."
     }
   ]
 }
