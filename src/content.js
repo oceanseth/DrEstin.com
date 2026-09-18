@@ -541,6 +541,22 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-09.jpeg",
       "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
+    },
+    {
+      "src": "/media/tournaments/tournament-10.jpeg",
+      "alt": "A man holding a Doctors On Call sign on a golf course with spectators and the ocean in the background."
+    },
+    {
+      "src": "/media/tournaments/tournament-11.jpeg",
+      "alt": "A group posing with a Doctors On Call sign at an outdoor golf event."
+    },
+    {
+      "src": "/media/tournaments/tournament-12.jpeg",
+      "alt": "Two medical team members in red shirts holding a Doctors On Call sign at the 2012 Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-13.jpeg",
+      "alt": "Two Doctors On Call team members with their sign courtside at the 2016 Maui Invitational."
     }
   ]
 }
