@@ -442,6 +442,10 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-14.jpeg",
       "alt": "Two men in red shirts smiling in stadium seating overlooking a football field and running track."
+    },
+    {
+      "src": "/media/lahainaluna/team-15.jpeg",
+      "alt": "A referee watching football players in red and white uniforms line up for a play, with spectators in the stands."
     }
   ]
 }
