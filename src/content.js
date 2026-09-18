@@ -609,6 +609,22 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-33.jpeg",
       "alt": "A man holding a Doctors On Call sign at the water\u2019s edge while athletes gather along the beach."
+    },
+    {
+      "src": "/media/tournaments/tournament-34.jpeg",
+      "alt": "Two medical team members in navy polos holding a Doctors On Call sign courtside at the 2018 Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-35.jpeg",
+      "alt": "Doctors On Call staff posing with cheerleaders and a Doctors On Call sign in front of a Maui Jim tournament banner."
+    },
+    {
+      "src": "/media/tournaments/tournament-36.jpeg",
+      "alt": "Two men smiling and making hand gestures beside the courtside broadcast table as basketball players warm up."
+    },
+    {
+      "src": "/media/tournaments/tournament-37.jpeg",
+      "alt": "Two medical team members in red polos holding a Doctors On Call sign at the 2018 Maui Invitational."
     }
   ]
 }
