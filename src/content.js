@@ -601,6 +601,14 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-31.jpeg",
       "alt": "A person seated facing the ocean in a red Doctors On Call chair on the beach."
+    },
+    {
+      "src": "/media/tournaments/tournament-32.jpeg",
+      "alt": "A man in a red polo holding a Doctors On Call sign on the beach in front of athletes wearing swimming caps."
+    },
+    {
+      "src": "/media/tournaments/tournament-33.jpeg",
+      "alt": "A man holding a Doctors On Call sign at the water\u2019s edge while athletes gather along the beach."
     }
   ]
 }
