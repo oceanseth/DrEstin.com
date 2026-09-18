@@ -40,6 +40,8 @@
 .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.7rem; }
 .card { padding: 1.7rem; background: var(--surface); border-radius: 1.1rem; }
 .card p { margin-top: 1rem; font-size: 1rem; }
+.card__photo { display: block; margin-top: 1.5rem; border-radius: .6rem; overflow: hidden; }
+.card__photo img { display: block; width: 100%; height: auto; }
 .scholarship-feature { background: var(--accent); color: #fff; border-radius: 1.1rem; padding: clamp(1.6rem,4vw,3rem); }
 .scholarship-feature h2 { font-size: clamp(2rem,3.7vw,3.1rem); max-width: 21ch; margin-bottom: 1.5rem; }
 .scholarship-feature > p { max-width: var(--measure); }

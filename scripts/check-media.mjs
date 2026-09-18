@@ -1,8 +1,9 @@
 // Warns when content.js points at a media file that is not in public/.
 import { existsSync } from 'node:fs'
-import { teamAdvisor, tournament, welcome } from '../src/content.js'
+import { teamAdvisor, tournament, welcome, work } from '../src/content.js'
 
 const photos = [
+  ...work.items.flatMap((item) => item.photo ? [item.photo] : []),
   ...welcome.blocks.flatMap((block) => block.type === 'gallery' ? block.photos : block.type === 'photo' ? [block] : []),
   ...teamAdvisor.photos,
   ...tournament.groups.flatMap((group) => group.photos),

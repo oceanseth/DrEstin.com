@@ -241,6 +241,11 @@ function Work() {
           <article className="card" key={item.title}>
             <h3>{item.title}</h3>
             <p>{item.body}</p>
+            {item.photo && (
+              <a className="card__photo" href={item.photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${item.photo.alt}`}>
+                <img src={item.photo.src} alt={item.photo.alt} loading="lazy" decoding="async" />
+              </a>
+            )}
           </article>
         ))}
       </div>

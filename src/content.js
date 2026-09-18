@@ -317,6 +317,10 @@ export const work = {
     },
     {
       title: 'Education & the next generation',
+      photo: {
+        src: '/media/education-maui-students.jpg',
+        alt: 'Lahaina News clipping showing Doctors On Call staff mentoring a Lahainaluna High School student, with the headline Students learn about the medical field at Doctors On Call.',
+      },
       body:
         'Healthcare education and training for Maui students, centered on Lahainaluna High ' +
         'School — a mentorship program connecting young people to careers in healthcare, and a ' +
@@ -518,6 +522,10 @@ export const tournament = {
       "id": "ncaa-basketball",
       "heading": "NCAA Maui Invitational Basketball",
       "photos": [
+        {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
+        {"src": "/media/tournaments/ncaa-san-diego-state-2.jpeg", "alt": "Two men smiling beside blue gym bleachers, one in a Doctors On Call polo and one in a San Diego State shirt."},
+        {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},
+        {"src": "/media/tournaments/ncaa-courtside-medical-team.jpeg", "alt": "Five medical team members in red polos holding a Doctors On Call sign on the basketball court at the Maui Invitational."},
         {
           "src": "/media/tournaments/tournament-04.jpeg",
           "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
