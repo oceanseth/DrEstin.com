@@ -8,15 +8,15 @@ export const site = {
   coastal: {
     eyebrow: 'Medicine with aloha',
     greeting: 'Aloha.',
-    introduction: 'I’m Dr. Norman Estin.',
+    introduction: 'I’m Dr. Norm Estin.',
     storyAction: 'Get to know me',
-    scholarshipAction: 'Support Maui students',
+    scholarshipAction: 'Support Maui Students and Education in Healthcare',
     storyHeading: 'A life in medicine. A home on Maui.',
     letterAction: 'Read my full welcome letter',
     nextGeneration: 'The next generation',
     scholarshipDetails: 'Explore the scholarship',
   },
-  name: 'Dr. Norman Estin',
+  name: 'Dr. Norm Estin',
   handle: 'DocMaui',
   domain: 'drestin.com',
   tagline: 'Forty years of medicine on Maui.',
@@ -27,7 +27,7 @@ export const site = {
 
 export const welcome = {
   heading: 'Welcome',
-  lede: 'Aloha! I’m Dr. Norman Estin.',
+  lede: 'Aloha! I’m Dr. Norm Estin.',
 
   // Drop the file in public/media/ and put its path here. See public/media/README.md for
   // specs. While src is null the page renders a labelled placeholder instead of the player.
@@ -71,7 +71,7 @@ export const welcome = {
     {
       type: 'photo',
       src: '/media/clinic-collage.jpg',
-      alt: 'Two Doctors On Call urgent care clinic storefronts with an inset portrait of Dr. Norman Estin wearing burgundy scrubs.',
+      alt: 'Two Doctors On Call urgent care clinic storefronts with an inset portrait of Dr. Norm Estin wearing burgundy scrubs.',
       caption: '', // optional
       width: 'wide',
     },
@@ -99,7 +99,7 @@ export const welcome = {
     {
       type: 'photo',
       src: '/media/clinic-portrait.jpg',
-      alt: 'Dr. Norman Estin standing outside the Doctors On Call urgent care and testing center.',
+      alt: 'Dr. Norm Estin standing outside the Doctors On Call urgent care and testing center.',
       caption: '',
       width: 'wide',
     },
@@ -235,7 +235,7 @@ export const links = {
     },
     {
       label: 'LinkedIn',
-      handle: 'Norman Estin',
+      handle: 'Norm Estin',
       href: 'https://www.linkedin.com/in/norman-estin-742113184/',
     },
     { label: 'Instagram', handle: '@DocMaui', href: null }, // TODO: real URL
@@ -261,19 +261,19 @@ export const contact = {
 export const scholarship = {
   navLabel: 'Scholarship',
   heading: 'Support the Future of Healthcare on Maui',
-  lede: 'Join Dr. Norman Estin in supporting the next generation of healthcare professionals on Maui.',
+  lede: 'Join Dr. Norm Estin in supporting the next generation of healthcare professionals on Maui.',
   paragraphs: [
-    'The Dr. Norman Estin Healthcare Scholarship Fund is a unique, physician-sponsored scholarship fund specifically directed toward developing and supporting Lahainaluna High School students pursuing education and careers in healthcare professions.',
+    'The Dr. Norm Estin Healthcare Scholarship Fund is a unique, physician-sponsored scholarship fund specifically directed toward developing and supporting Lahainaluna High School students pursuing education and careers in healthcare professions.',
     'Your contribution helps local students achieve their educational goals and prepare for a future in healthcare, strengthening the future of healthcare on Maui.',
   ],
   giveLabel: 'GIVE NOW',
   donationUrl: 'https://secure.etransfer.com/eft/flexblockcode/donation1.cfm?d2org=LHSF&d2tool=donate',
-  donationIntro: 'Make a secure online contribution to the Dr. Norman Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
+  donationIntro: 'Make a secure online contribution to the Dr. Norm Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
   pendingLabel: 'Online giving link coming soon. You can contribute by mail below.',
-  taxNote: 'Contributions to the Dr. Norman Estin Healthcare Scholarship Fund are administered through the Lahainaluna High School Foundation, a 501(c)(3) organization. All donations to this fund are tax deductible.',
+  taxNote: 'Contributions to the Dr. Norm Estin Healthcare Scholarship Fund are administered through the Lahainaluna High School Foundation, a 501(c)(3) organization. All donations to this fund are tax deductible.',
   mailHeading: 'To contribute by mail, please send your donation to:',
   address: ['Lahainaluna High School - College and Career Center', '980 Lahainaluna Road', 'Lahaina, HI 96761'],
-  checkInstructions: 'Please make checks payable to Lahainaluna High School Foundation and note "Dr. Norman Estin Scholarship Fund" in the memo line.',
+  checkInstructions: 'Please make checks payable to Lahainaluna High School Foundation and note "Dr. Norm Estin Scholarship Fund" in the memo line.',
   contactHeading: 'For more information, please contact:',
   contactName: 'Art Filazar',
   contactEmail: 'lhsf08@yahoo.com',

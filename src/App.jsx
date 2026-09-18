@@ -362,7 +362,7 @@ function Scholarship() {
 
 export default function App() {
   useEffect(() => {
-    document.title = IS_SCHOLARSHIP ? `${scholarship.heading} · DocMaui` : 'Dr. Norman Estin · DocMaui'
+    document.title = IS_SCHOLARSHIP ? `${scholarship.heading} · DocMaui` : 'Dr. Norm Estin · DocMaui'
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', `https://drestin.com${IS_SCHOLARSHIP ? '/scholarship' : '/'}`)
   }, [])
   return (
