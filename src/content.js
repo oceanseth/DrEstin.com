@@ -641,6 +641,10 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-37.jpeg",
       "alt": "Two medical team members in red polos holding a Doctors On Call sign at the 2018 Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-38.jpeg",
+      "alt": "A man in a red polo holding a Doctors On Call sign on a golf course overlooking the ocean and a mountainous island."
     }
   ]
 }
