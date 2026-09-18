@@ -13,7 +13,7 @@
 .hero__tagline { margin-top: 1.3rem; font: 1.3rem Georgia, serif; }
 .hero__intro { margin-top: 1.5rem; max-width: var(--measure); color: var(--text-dim); font-size: 1.1rem; }
 .hero__portrait { margin: 0; }
-.hero__portrait img { width: 100%; height: 31rem; object-fit: cover; object-position: center; border-radius: 10rem 10rem 1.25rem 1.25rem; }
+.hero__portrait img { width: 100%; height: 31rem; object-fit: cover; object-position: center; border-radius: 1.25rem; }
 .hero__actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1.7rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; padding: .8rem 1.5rem; border-radius: 2rem; border: 1px solid var(--border); font-size: .92rem; font-weight: bold; text-decoration: none; min-height: 44px; }
 .btn:hover { text-decoration: underline; }

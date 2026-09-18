@@ -254,10 +254,6 @@ export const welcome = {
       "alt": "A news image of a man walking through wildfire destruction in Lahaina, with the original news caption."
     },
     {
-      "src": "/media/wildfires/wildfire-03.jpeg",
-      "alt": "A man in a red Doctors On Call shirt and a woman posing together with shaka gestures."
-    },
-    {
       "src": "/media/wildfires/wildfire-04.jpeg",
       "alt": "A map screenshot showing the Lahaina wildfire burn area in yellow and healthcare locations marked by category."
     },
@@ -539,7 +535,10 @@ export const tournament = {
       "heading": "NCAA Maui Invitational Basketball",
       "photos": [
         {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
-        {"src": "/media/tournaments/ncaa-san-diego-state-2.jpeg", "alt": "Two men smiling beside blue gym bleachers, one in a Doctors On Call polo and one in a San Diego State shirt."},
+        {
+          "src": "/media/tournaments/tournament-20.jpeg",
+          "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
+        },
         {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},
         {"src": "/media/tournaments/ncaa-courtside-medical-team.jpeg", "alt": "Five medical team members in red polos holding a Doctors On Call sign on the basketball court at the Maui Invitational."},
         {
@@ -577,10 +576,6 @@ export const tournament = {
         {
           "src": "/media/tournaments/tournament-19.jpeg",
           "alt": "Two medical team members in red shirts seated courtside at a basketball tournament."
-        },
-        {
-          "src": "/media/tournaments/tournament-20.jpeg",
-          "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
         {
           "src": "/media/tournaments/tournament-34.jpeg",
@@ -622,7 +617,7 @@ export const tournament = {
     },
     {
       "id": "kapalua-golf",
-      "heading": "Golf tournaments",
+      "heading": "PGA, Senior, and Wendy’s golf tournaments",
       "photos": [
         {
           "src": "/media/tournaments/legacy-cup-doctors-on-call.jpeg",
@@ -664,7 +659,7 @@ export const tournament = {
     },
     {
       "id": "miscellaneous-sports",
-      "heading": "Miscellaneous Sports Photos",
+      "heading": "Other sporting event Medical advisor positions",
       "photos": [
         {
           "src": "/media/tournaments/tournament-01.jpeg",

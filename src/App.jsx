@@ -175,7 +175,7 @@ function Welcome() {
       <details className="welcome__full">
       <summary>{site.coastal.letterAction}</summary>
       <div className="welcome__letter">
-        {WELCOME_BLOCKS.map((block, i) =>
+        {WELCOME_BLOCKS.slice(2).map((block, i) =>
           block.type === 'photo' ? (
             <Photo block={block} index={block.photoIndex} key={`photo-${block.photoIndex}`} />
           ) : block.type === 'gallery' ? (
