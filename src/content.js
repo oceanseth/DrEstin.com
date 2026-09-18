@@ -5,6 +5,17 @@
 // listing or a news write-up, the letter wins.
 
 export const site = {
+  coastal: {
+    eyebrow: 'Medicine with aloha',
+    greeting: 'Aloha.',
+    introduction: 'I’m Dr. Norman Estin.',
+    storyAction: 'Get to know me',
+    scholarshipAction: 'Support Maui students',
+    storyHeading: 'A life in medicine. A home on Maui.',
+    letterAction: 'Read my full welcome letter',
+    nextGeneration: 'The next generation',
+    scholarshipDetails: 'Explore the scholarship',
+  },
   name: 'Dr. Norman Estin',
   handle: 'DocMaui',
   domain: 'drestin.com',

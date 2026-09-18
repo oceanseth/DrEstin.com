@@ -55,26 +55,26 @@ function Nav() {
 }
 
 function Hero() {
+  const portrait = welcome.blocks.find((block) => block.src === '/media/clinic-portrait.jpg')
   return (
-    <section className="hero shell" id="top">
+    <section className="hero hero--coastal shell" id="top">
+      <div className="hero__copy">
       <span className="hero__eyebrow">
-        <span className="hero__dot" aria-hidden="true" />
-        Maui, Hawai&#699;i
+        {site.coastal.eyebrow}
       </span>
       <h1>
-        {site.name} <em>{site.handle}</em>
+        {site.coastal.greeting}<br />{site.coastal.introduction}
       </h1>
       <p className="hero__tagline">{site.tagline}</p>
       <p className="hero__intro">{site.intro}</p>
       <div className="hero__actions">
-        <a className="btn btn--primary" href="#links">
-          Find me online
+        <a className="btn btn--primary" href="#welcome">
+          {site.coastal.storyAction}
         </a>
-        <a className="btn btn--ghost" href="#welcome">
-          Read the story
-        </a>
-        <a className="btn btn--ghost" href="/scholarship">{scholarship.navLabel}</a>
+        <a className="btn btn--ghost" href="/scholarship">{site.coastal.scholarshipAction}</a>
       </div>
+      </div>
+      {portrait && <figure className="hero__portrait"><img src={portrait.src} alt={portrait.alt} fetchPriority="high" /></figure>}
     </section>
   )
 }
@@ -169,13 +169,18 @@ function Photo({ block, index }) {
 
 function Welcome() {
   return (
-    <Section id="welcome" heading={welcome.heading}>
-      <p className="welcome__lede">{welcome.lede}</p>
-
+    <Section id="welcome" heading={site.coastal.storyHeading}>
+      <div className="welcome__overview">
+      <div className="welcome__summary">
+        <p className="welcome__lede">{welcome.lede}</p>
+        {WELCOME_BLOCKS.slice(0, 2).map((block, i) => <p key={i}>{block.text}</p>)}
+      </div>
       <div className="welcome__media">
         <WelcomeVideo />
       </div>
-
+      </div>
+      <details className="welcome__full">
+      <summary>{site.coastal.letterAction}</summary>
       <div className="welcome__letter">
         {WELCOME_BLOCKS.map((block, i) =>
           block.type === 'photo' ? (
@@ -186,6 +191,7 @@ function Welcome() {
           ),
         )}
       </div>
+      </details>
 
       <dl className="stats stats--row">
         {welcome.stats.map((stat) => (
@@ -211,6 +217,22 @@ function Work() {
         ))}
       </div>
     </Section>
+  )
+}
+
+function ScholarshipFeature() {
+  return (
+    <section className="section shell" aria-labelledby="scholarship-feature-heading">
+      <div className="scholarship-feature">
+        <p className="hero__eyebrow">{site.coastal.nextGeneration}</p>
+        <h2 id="scholarship-feature-heading">{scholarship.heading}</h2>
+        <p>{scholarship.lede}</p>
+        <div className="hero__actions">
+          <a className="btn btn--primary" href="/scholarship">{site.coastal.scholarshipDetails}</a>
+          <a className="btn btn--ghost" href={scholarship.donationUrl} target="_blank" rel="noopener noreferrer">{scholarship.giveLabel}</a>
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -340,6 +362,7 @@ export default function App() {
         <Hero />
         <Welcome />
         <Work />
+        <ScholarshipFeature />
         <News />
         <Links />
         <Contact />
