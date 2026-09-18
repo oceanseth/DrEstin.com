@@ -133,8 +133,36 @@ export const welcome = {
         'Then, in August 2023, came the devastating Maui wildfires. Our West Maui clinic was ' +
         'fortunate to survive when so much of the surrounding community did not. We reopened as ' +
         'quickly as possible and cared for the injured, the displaced, and those suffering from ' +
-        'smoke, ash, fire, and enormous personal loss.',
+        'smoke, ash, fire, and enormous personal loss. Representative Jill Tokuda was of tremendous ' +
+        'help for us and the entire West Maui community in recovering from the fire.',
     },
+    {
+  "type": "gallery",
+  "id": "wildfire-photos",
+  "label": "Maui wildfire response photographs and images",
+  "photos": [
+    {
+      "src": "/media/wildfires/wildfire-01.jpeg",
+      "alt": "A man photographing a burned vehicle amid wildfire debris."
+    },
+    {
+      "src": "/media/wildfires/wildfire-02.jpeg",
+      "alt": "A news image of a man walking through wildfire destruction in Lahaina, with the original news caption."
+    },
+    {
+      "src": "/media/wildfires/wildfire-03.jpeg",
+      "alt": "A man in a red Doctors On Call shirt and a woman posing together with shaka gestures."
+    },
+    {
+      "src": "/media/wildfires/wildfire-04.jpeg",
+      "alt": "A map screenshot showing the Lahaina wildfire burn area in yellow and healthcare locations marked by category."
+    },
+    {
+      "src": "/media/wildfires/wildfire-05.jpeg",
+      "alt": "A UHERO report screenshot titled After the Maui wildfires: The road ahead."
+    }
+  ]
+},
     {
       type: 'photo',
       src: '/media/clinic-portrait.jpg',
