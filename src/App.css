@@ -76,3 +76,6 @@ a.linklist__row:hover { text-decoration: underline; }
 .welcome-gallery a { display: block; border-radius: 1rem; overflow: hidden; }
 .welcome-gallery img { width: 100%; height: auto; }
 @media (max-width: 47.5rem) { .welcome-gallery { grid-template-columns: 1fr; } }
+
+.tournament-group { margin-top: 2.5rem; }
+.tournament-group h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 1.4rem; }

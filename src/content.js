@@ -490,6 +490,22 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-26.jpeg",
       "alt": "Three smiling Lahainaluna supporters seated in stadium bleachers at night, with a man making a shaka gesture in the foreground."
+    },
+    {
+      "src": "/media/lahainaluna/team-27.jpeg",
+      "alt": "A man and Lahainaluna football players making shaka gestures on the sideline in Honolulu."
+    },
+    {
+      "src": "/media/lahainaluna/team-28.jpeg",
+      "alt": "Three Lahainaluna staff members posing together on the football field in Honolulu."
+    },
+    {
+      "src": "/media/lahainaluna/team-29.jpeg",
+      "alt": "Lahainaluna players and staff on the sideline beneath the stadium scoreboard in Honolulu."
+    },
+    {
+      "src": "/media/lahainaluna/team-30.jpeg",
+      "alt": "Lahainaluna football players gathered around a championship trophy as photographers capture the celebration."
     }
   ]
 }
@@ -497,162 +513,204 @@ export const teamAdvisor = {
 export const tournament = {
   "heading": "Tournament Medical Director",
   "body": "Dr. Estin and the Doctors On Call team have been team physicians, medical directors, and medical advisors for numerous golf events at Kapalua and national-level basketball tournaments, such as the Maui Invitational. We have also been the medical provider for numerous local athletic events, such as surfing.",
-  "photos": [
+  "groups": [
     {
-      "src": "/media/tournaments/tournament-01.jpeg",
-      "alt": "Two Doctors On Call team members holding a sign at an outdoor athletic event."
+      "id": "ncaa-basketball",
+      "heading": "NCAA Maui Invitational Basketball",
+      "photos": [
+        {
+          "src": "/media/tournaments/tournament-04.jpeg",
+          "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-08.jpeg",
+          "alt": "Five Doctors On Call team members in red shirts holding a sign beside a basketball court."
+        },
+        {
+          "src": "/media/tournaments/tournament-09.jpeg",
+          "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
+        },
+        {
+          "src": "/media/tournaments/tournament-12.jpeg",
+          "alt": "Two medical team members in red shirts holding a Doctors On Call sign at the 2012 Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-13.jpeg",
+          "alt": "Two Doctors On Call team members with their sign courtside at the 2016 Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-16.jpeg",
+          "alt": "Five medical team members in red shirts and leis holding a Doctors On Call sign on a basketball court."
+        },
+        {
+          "src": "/media/tournaments/tournament-17.jpeg",
+          "alt": "Basketball players and photographers gathered around a silver trophy decorated with leis."
+        },
+        {
+          "src": "/media/tournaments/tournament-18.jpeg",
+          "alt": "Five Doctors On Call team members in red shirts seated together in a room at a sporting event."
+        },
+        {
+          "src": "/media/tournaments/tournament-19.jpeg",
+          "alt": "Two medical team members in red shirts seated courtside at a basketball tournament."
+        },
+        {
+          "src": "/media/tournaments/tournament-20.jpeg",
+          "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-34.jpeg",
+          "alt": "Two medical team members in navy polos holding a Doctors On Call sign courtside at the 2018 Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-35.jpeg",
+          "alt": "Doctors On Call staff posing with cheerleaders and a Doctors On Call sign in front of a Maui Jim tournament banner."
+        },
+        {
+          "src": "/media/tournaments/tournament-36.jpeg",
+          "alt": "Two men smiling and making hand gestures beside the courtside broadcast table as basketball players warm up."
+        },
+        {
+          "src": "/media/tournaments/tournament-37.jpeg",
+          "alt": "Two medical team members in red polos holding a Doctors On Call sign at the 2018 Maui Invitational."
+        },
+        {
+          "src": "/media/tournaments/tournament-40.jpeg",
+          "alt": "Four medical team members in red polos standing in front of a Maui Invitational banner."
+        },
+        {
+          "src": "/media/tournaments/tournament-41.jpeg",
+          "alt": "Four medical team members making shaka gestures courtside as basketball players warm up."
+        },
+        {
+          "src": "/media/tournaments/tournament-42.jpeg",
+          "alt": "Three people smiling together in the stands during a Maui Invitational basketball game."
+        },
+        {
+          "src": "/media/tournaments/tournament-43.jpeg",
+          "alt": "Two medical team members in red polos seated beneath the Lahaina Civic Center scoreboard."
+        },
+        {
+          "src": "/media/tournaments/tournament-44.jpeg",
+          "alt": "A broadcaster wearing a headset and leis, holding a bowl of pineapple beside the basketball court."
+        }
+      ]
     },
     {
-      "src": "/media/tournaments/tournament-02.jpeg",
-      "alt": "Two women wearing leis hold a Doctors On Call sign at the XTERRA World Championship finish line."
+      "id": "kapalua-golf",
+      "heading": "Kapalua PGA Golf",
+      "photos": [
+        {
+          "src": "/media/tournaments/tournament-05.jpeg",
+          "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
+        },
+        {
+          "src": "/media/tournaments/tournament-10.jpeg",
+          "alt": "A man holding a Doctors On Call sign on a golf course with spectators and the ocean in the background."
+        },
+        {
+          "src": "/media/tournaments/tournament-11.jpeg",
+          "alt": "A group posing with a Doctors On Call sign at an outdoor golf event."
+        },
+        {
+          "src": "/media/tournaments/tournament-14.jpeg",
+          "alt": "A medical team member between two Doctors On Call golf carts at a golf event, with spectators and the ocean behind him."
+        },
+        {
+          "src": "/media/tournaments/tournament-15.jpeg",
+          "alt": "A man beside a decorated Doctors On Call golf cart near the beach."
+        },
+        {
+          "src": "/media/tournaments/tournament-22.jpeg",
+          "alt": "A group posing on a golf course around a golfer holding a trophy and wearing a lei."
+        },
+        {
+          "src": "/media/tournaments/tournament-38.jpeg",
+          "alt": "A man in a red polo holding a Doctors On Call sign on a golf course overlooking the ocean and a mountainous island."
+        },
+        {
+          "src": "/media/tournaments/tournament-45.jpeg",
+          "alt": "Two people making shaka gestures in a medical golf cart at the Sentry Tournament of Champions in Kapalua."
+        }
+      ]
     },
     {
-      "src": "/media/tournaments/tournament-03.jpeg",
-      "alt": "Dr. Estin holding a Doctors On Call sign beneath the XTERRA World Championship arch."
-    },
-    {
-      "src": "/media/tournaments/tournament-04.jpeg",
-      "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-05.jpeg",
-      "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
-    },
-    {
-      "src": "/media/tournaments/tournament-06.jpeg",
-      "alt": "Dr. Estin and a colleague making shaka gestures at a beach surfing event."
-    },
-    {
-      "src": "/media/tournaments/tournament-07.jpeg",
-      "alt": "Participants, event tents, picnic tables, and colorful surfboards on the beach."
-    },
-    {
-      "src": "/media/tournaments/tournament-08.jpeg",
-      "alt": "Five Doctors On Call team members in red shirts holding a sign beside a basketball court."
-    },
-    {
-      "src": "/media/tournaments/tournament-09.jpeg",
-      "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
-    },
-    {
-      "src": "/media/tournaments/tournament-10.jpeg",
-      "alt": "A man holding a Doctors On Call sign on a golf course with spectators and the ocean in the background."
-    },
-    {
-      "src": "/media/tournaments/tournament-11.jpeg",
-      "alt": "A group posing with a Doctors On Call sign at an outdoor golf event."
-    },
-    {
-      "src": "/media/tournaments/tournament-12.jpeg",
-      "alt": "Two medical team members in red shirts holding a Doctors On Call sign at the 2012 Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-13.jpeg",
-      "alt": "Two Doctors On Call team members with their sign courtside at the 2016 Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-14.jpeg",
-      "alt": "A medical team member between two Doctors On Call golf carts at a golf event, with spectators and the ocean behind him."
-    },
-    {
-      "src": "/media/tournaments/tournament-15.jpeg",
-      "alt": "A man beside a decorated Doctors On Call golf cart near the beach."
-    },
-    {
-      "src": "/media/tournaments/tournament-16.jpeg",
-      "alt": "Five medical team members in red shirts and leis holding a Doctors On Call sign on a basketball court."
-    },
-    {
-      "src": "/media/tournaments/tournament-17.jpeg",
-      "alt": "Basketball players and photographers gathered around a silver trophy decorated with leis."
-    },
-    {
-      "src": "/media/tournaments/tournament-18.jpeg",
-      "alt": "Five Doctors On Call team members in red shirts seated together in a room at a sporting event."
-    },
-    {
-      "src": "/media/tournaments/tournament-19.jpeg",
-      "alt": "Two medical team members in red shirts seated courtside at a basketball tournament."
-    },
-    {
-      "src": "/media/tournaments/tournament-20.jpeg",
-      "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-21.jpeg",
-      "alt": "A man holding a Doctors On Call sign in the stands overlooking a tennis court."
-    },
-    {
-      "src": "/media/tournaments/tournament-22.jpeg",
-      "alt": "A group posing on a golf course around a golfer holding a trophy and wearing a lei."
-    },
-    {
-      "src": "/media/tournaments/tournament-23.jpeg",
-      "alt": "USA and Germany tennis team members wearing leis and posing with performers beside a Fed Cup sign overlooking the ocean."
-    },
-    {
-      "src": "/media/tournaments/tournament-24.jpeg",
-      "alt": "A man in a red polo and a USA Fed Cup team member wearing a lei making shaka gestures by the ocean."
-    },
-    {
-      "src": "/media/tournaments/tournament-25.jpeg",
-      "alt": "A hand holding a 2017 USA versus Germany Fed Cup event badge with a portrait and USTA Events label."
-    },
-    {
-      "src": "/media/tournaments/tournament-26.jpeg",
-      "alt": "Tennis players and a camera crew on a Fed Cup court with an American flag and spectators in the stands."
-    },
-    {
-      "src": "/media/tournaments/tournament-27.jpeg",
-      "alt": "A hand holding a 2017 Doctors On Call medical credential with a portrait of Dr. Estin."
-    },
-    {
-      "src": "/media/tournaments/tournament-28.jpeg",
-      "alt": "A Maui Jim event tent with a Doctors On Call sign on the beach beside a paddleboard and participants."
-    },
-    {
-      "src": "/media/tournaments/tournament-29.jpeg",
-      "alt": "People and event supplies beneath beachside tents, with a cooler bearing a Doctors On Call sign."
-    },
-    {
-      "src": "/media/tournaments/tournament-30.jpeg",
-      "alt": "A group standing in shallow ocean water with colorful surfboards during a beach event."
-    },
-    {
-      "src": "/media/tournaments/tournament-31.jpeg",
-      "alt": "A person seated facing the ocean in a red Doctors On Call chair on the beach."
-    },
-    {
-      "src": "/media/tournaments/tournament-32.jpeg",
-      "alt": "A man in a red polo holding a Doctors On Call sign on the beach in front of athletes wearing swimming caps."
-    },
-    {
-      "src": "/media/tournaments/tournament-33.jpeg",
-      "alt": "A man holding a Doctors On Call sign at the water\u2019s edge while athletes gather along the beach."
-    },
-    {
-      "src": "/media/tournaments/tournament-34.jpeg",
-      "alt": "Two medical team members in navy polos holding a Doctors On Call sign courtside at the 2018 Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-35.jpeg",
-      "alt": "Doctors On Call staff posing with cheerleaders and a Doctors On Call sign in front of a Maui Jim tournament banner."
-    },
-    {
-      "src": "/media/tournaments/tournament-36.jpeg",
-      "alt": "Two men smiling and making hand gestures beside the courtside broadcast table as basketball players warm up."
-    },
-    {
-      "src": "/media/tournaments/tournament-37.jpeg",
-      "alt": "Two medical team members in red polos holding a Doctors On Call sign at the 2018 Maui Invitational."
-    },
-    {
-      "src": "/media/tournaments/tournament-38.jpeg",
-      "alt": "A man in a red polo holding a Doctors On Call sign on a golf course overlooking the ocean and a mountainous island."
-    },
-    {
-      "src": "/media/tournaments/tournament-39.jpeg",
-      "alt": "A clear medical supply bin on a Doctors On Call cooler beneath a beachside event tent, with staff and the ocean behind it."
+      "id": "miscellaneous-sports",
+      "heading": "Miscellaneous Sports Photos",
+      "photos": [
+        {
+          "src": "/media/tournaments/tournament-01.jpeg",
+          "alt": "Two Doctors On Call team members holding a sign at an outdoor athletic event."
+        },
+        {
+          "src": "/media/tournaments/tournament-02.jpeg",
+          "alt": "Two women wearing leis hold a Doctors On Call sign at the XTERRA World Championship finish line."
+        },
+        {
+          "src": "/media/tournaments/tournament-03.jpeg",
+          "alt": "Dr. Estin holding a Doctors On Call sign beneath the XTERRA World Championship arch."
+        },
+        {
+          "src": "/media/tournaments/tournament-06.jpeg",
+          "alt": "Dr. Estin and a colleague making shaka gestures at a beach surfing event."
+        },
+        {
+          "src": "/media/tournaments/tournament-07.jpeg",
+          "alt": "Participants, event tents, picnic tables, and colorful surfboards on the beach."
+        },
+        {
+          "src": "/media/tournaments/tournament-21.jpeg",
+          "alt": "A man holding a Doctors On Call sign in the stands overlooking a tennis court."
+        },
+        {
+          "src": "/media/tournaments/tournament-23.jpeg",
+          "alt": "USA and Germany tennis team members wearing leis and posing with performers beside a Fed Cup sign overlooking the ocean."
+        },
+        {
+          "src": "/media/tournaments/tournament-24.jpeg",
+          "alt": "A man in a red polo and a USA Fed Cup team member wearing a lei making shaka gestures by the ocean."
+        },
+        {
+          "src": "/media/tournaments/tournament-25.jpeg",
+          "alt": "A hand holding a 2017 USA versus Germany Fed Cup event badge with a portrait and USTA Events label."
+        },
+        {
+          "src": "/media/tournaments/tournament-26.jpeg",
+          "alt": "Tennis players and a camera crew on a Fed Cup court with an American flag and spectators in the stands."
+        },
+        {
+          "src": "/media/tournaments/tournament-27.jpeg",
+          "alt": "A hand holding a 2017 Doctors On Call medical credential with a portrait of Dr. Estin."
+        },
+        {
+          "src": "/media/tournaments/tournament-28.jpeg",
+          "alt": "A Maui Jim event tent with a Doctors On Call sign on the beach beside a paddleboard and participants."
+        },
+        {
+          "src": "/media/tournaments/tournament-29.jpeg",
+          "alt": "People and event supplies beneath beachside tents, with a cooler bearing a Doctors On Call sign."
+        },
+        {
+          "src": "/media/tournaments/tournament-30.jpeg",
+          "alt": "A group standing in shallow ocean water with colorful surfboards during a beach event."
+        },
+        {
+          "src": "/media/tournaments/tournament-31.jpeg",
+          "alt": "A person seated facing the ocean in a red Doctors On Call chair on the beach."
+        },
+        {
+          "src": "/media/tournaments/tournament-32.jpeg",
+          "alt": "A man in a red polo holding a Doctors On Call sign on the beach in front of athletes wearing swimming caps."
+        },
+        {
+          "src": "/media/tournaments/tournament-33.jpeg",
+          "alt": "A man holding a Doctors On Call sign at the water\u2019s edge while athletes gather along the beach."
+        },
+        {
+          "src": "/media/tournaments/tournament-39.jpeg",
+          "alt": "A clear medical supply bin on a Doctors On Call cooler beneath a beachside event tent, with staff and the ocean behind it."
+        }
+      ]
     }
   ]
 }

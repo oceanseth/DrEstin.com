@@ -5,7 +5,7 @@ import { teamAdvisor, tournament, welcome } from '../src/content.js'
 const photos = [
   ...welcome.blocks.flatMap((block) => block.type === 'gallery' ? block.photos : block.type === 'photo' ? [block] : []),
   ...teamAdvisor.photos,
-  ...tournament.photos,
+  ...tournament.groups.flatMap((group) => group.photos),
 ]
 
 const refs = [

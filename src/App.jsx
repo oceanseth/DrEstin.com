@@ -205,13 +205,18 @@ function Welcome() {
       <section className="team-advisor" aria-labelledby="tournament-heading">
         <h2 id="tournament-heading">{tournament.heading}</h2>
         <p>{tournament.body}</p>
-        <div className="team-gallery">
-          {tournament.photos.map((photo) => (
-            <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
-              <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
-            </a>
-          ))}
-        </div>
+        {tournament.groups.map((group) => (
+          <section className="tournament-group" key={group.id} aria-labelledby={group.id}>
+            <h3 id={group.id}>{group.heading}</h3>
+            <div className="team-gallery">
+              {group.photos.map((photo) => (
+                <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
+                  <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
       </section>
       <section className="team-advisor" aria-labelledby="team-advisor-heading">
         <h2 id="team-advisor-heading">{teamAdvisor.heading}</h2>
