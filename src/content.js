@@ -462,6 +462,14 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-19.jpeg",
       "alt": "Four supporters and sports medicine staff posing beside a football field in front of crowded stadium stands."
+    },
+    {
+      "src": "/media/lahainaluna/team-20.jpeg",
+      "alt": "A man in a red cap and polo making a shaka gesture beside a Sue\u2019s Boys sign at a nighttime football game."
+    },
+    {
+      "src": "/media/lahainaluna/team-21.jpeg",
+      "alt": "Spectators overlooking the Lahainaluna football field and illuminated scoreboard at night."
     }
   ]
 }
