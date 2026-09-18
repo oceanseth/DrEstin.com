@@ -124,6 +124,38 @@ export const welcome = {
     {
       "src": "/media/covid/covid-08.jpeg",
       "alt": "Three diagnostic testing instruments arranged beside swabs, sample tubes, and a sharps container."
+    },
+    {
+      "src": "/media/covid/covid-09.jpeg",
+      "alt": "Two healthcare workers in masks, face shields, and protective clothing outside Doctors On Call."
+    },
+    {
+      "src": "/media/covid/covid-10.jpeg",
+      "alt": "Masked and gloved staff using laptops at an outdoor Doctors On Call station."
+    },
+    {
+      "src": "/media/covid/covid-11.jpeg",
+      "alt": "Three masked men, including a uniformed medical worker with a stethoscope, posing at an outdoor response site."
+    },
+    {
+      "src": "/media/covid/covid-12.jpeg",
+      "alt": "Four diagnostic testing instruments arranged on a clinic counter."
+    },
+    {
+      "src": "/media/covid/covid-13.jpeg",
+      "alt": "Two masked men, one wearing a military uniform and stethoscope, making shaka gestures."
+    },
+    {
+      "src": "/media/covid/covid-14.jpeg",
+      "alt": "A masked man in a navy polo beside a Doctors On Call van outside the urgent care clinic."
+    },
+    {
+      "src": "/media/covid/covid-15.jpeg",
+      "alt": "A masked man in a teal polo in front of the Doctors On Call clinic and branded van."
+    },
+    {
+      "src": "/media/covid/covid-16.jpeg",
+      "alt": "Laboratory instruments and supplies on a clinic countertop beside a sink."
     }
   ]
 },
