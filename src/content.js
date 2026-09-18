@@ -645,6 +645,10 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-38.jpeg",
       "alt": "A man in a red polo holding a Doctors On Call sign on a golf course overlooking the ocean and a mountainous island."
+    },
+    {
+      "src": "/media/tournaments/tournament-39.jpeg",
+      "alt": "A clear medical supply bin on a Doctors On Call cooler beneath a beachside event tent, with staff and the ocean behind it."
     }
   ]
 }
