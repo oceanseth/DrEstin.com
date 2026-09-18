@@ -577,6 +577,22 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-27.jpeg",
       "alt": "A hand holding a 2017 Doctors On Call medical credential with a portrait of Dr. Estin."
+    },
+    {
+      "src": "/media/tournaments/tournament-28.jpeg",
+      "alt": "A Maui Jim event tent with a Doctors On Call sign on the beach beside a paddleboard and participants."
+    },
+    {
+      "src": "/media/tournaments/tournament-29.jpeg",
+      "alt": "People and event supplies beneath beachside tents, with a cooler bearing a Doctors On Call sign."
+    },
+    {
+      "src": "/media/tournaments/tournament-30.jpeg",
+      "alt": "A group standing in shallow ocean water with colorful surfboards during a beach event."
+    },
+    {
+      "src": "/media/tournaments/tournament-31.jpeg",
+      "alt": "A person seated facing the ocean in a red Doctors On Call chair on the beach."
     }
   ]
 }
