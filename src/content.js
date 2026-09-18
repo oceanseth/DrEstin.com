@@ -89,6 +89,45 @@ export const welcome = {
         'test, vaccinate, distribute vaccines, and care for those who became ill.',
     },
     {
+  "type": "gallery",
+  "id": "covid-photos",
+  "label": "COVID-19 community response photographs",
+  "photos": [
+    {
+      "src": "/media/covid/covid-01.jpeg",
+      "alt": "Healthcare workers in protective gowns, masks, and face shields coordinating outdoors beside a supply table."
+    },
+    {
+      "src": "/media/covid/covid-02.jpeg",
+      "alt": "A healthcare worker wearing glasses, a surgical mask, a face shield, and a protective gown."
+    },
+    {
+      "src": "/media/covid/covid-03.jpeg",
+      "alt": "A hand holding a white coronavirus-shaped model labeled Doctors On Call."
+    },
+    {
+      "src": "/media/covid/covid-04.jpeg",
+      "alt": "A masked man in a red polo at an outdoor gathering of medical staff and uniformed personnel."
+    },
+    {
+      "src": "/media/covid/covid-05.jpeg",
+      "alt": "Gloved healthcare workers preparing testing supplies on a table."
+    },
+    {
+      "src": "/media/covid/covid-06.jpeg",
+      "alt": "Masked staff working at a Doctors On Call testing station."
+    },
+    {
+      "src": "/media/covid/covid-07.jpeg",
+      "alt": "A sign reading Urgent Care and COVID Testing Center."
+    },
+    {
+      "src": "/media/covid/covid-08.jpeg",
+      "alt": "Three diagnostic testing instruments arranged beside swabs, sample tubes, and a sharps container."
+    }
+  ]
+},
+    {
       type: 'p',
       text:
         'Then, in August 2023, came the devastating Maui wildfires. Our West Maui clinic was ' +

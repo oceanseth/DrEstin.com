@@ -185,6 +185,14 @@ function Welcome() {
         {WELCOME_BLOCKS.map((block, i) =>
           block.type === 'photo' ? (
             <Photo block={block} index={block.photoIndex} key={`photo-${block.photoIndex}`} />
+          ) : block.type === 'gallery' ? (
+            <div className="welcome-gallery" id={block.id} role="group" aria-label={block.label} key={block.id}>
+              {block.photos.map((photo) => (
+                <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
+                  <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+                </a>
+              ))}
+            </div>
           ) : (
             // Paragraph text is stable copy, so the index is a safe key here.
             <p key={`p-${i}`}>{block.text}</p>
