@@ -606,8 +606,12 @@ export const tournament = {
     },
     {
       "id": "kapalua-golf",
-      "heading": "Kapalua PGA Golf",
+      "heading": "Golf tournaments",
       "photos": [
+        {
+          "src": "/media/tournaments/legacy-cup-doctors-on-call.jpeg",
+          "alt": "A man in a red Doctors On Call polo taking a selfie beside the medical team's table, with a Legacy Cup welcome banner and golf course behind him."
+        },
         {
           "src": "/media/tournaments/tournament-05.jpeg",
           "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
