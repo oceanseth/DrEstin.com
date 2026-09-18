@@ -1,10 +1,10 @@
 :root {
-  --bg: #faf7ef;
-  --surface: #eeeede;
+  --bg: #fafaf6;
+  --surface: #f0f2eb;
   --border: #ced4c8;
-  --text: #233f3b;
-  --text-dim: #415951;
-  --accent: #2c6658;
+  --text: #1e3e35;
+  --text-dim: #345347;
+  --accent: #285f50;
   --measure: 68ch;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --section-y: clamp(3rem, 6vw, 4.5rem);
