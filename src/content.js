@@ -470,6 +470,22 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-21.jpeg",
       "alt": "Spectators overlooking the Lahainaluna football field and illuminated scoreboard at night."
+    },
+    {
+      "src": "/media/lahainaluna/team-22.jpeg",
+      "alt": "Lahainaluna supporters smiling together in orange stadium seats, with a man making a shaka gesture in the foreground."
+    },
+    {
+      "src": "/media/lahainaluna/team-23.jpeg",
+      "alt": "Lunas cheerleaders in red and white uniforms standing beside the field, with pom-poms and supporters behind them."
+    },
+    {
+      "src": "/media/lahainaluna/team-24.jpeg",
+      "alt": "Three sports medicine staff holding a Doctors On Call sign on a football stadium sideline."
+    },
+    {
+      "src": "/media/lahainaluna/team-25.jpeg",
+      "alt": "Lahainaluna supporters in stadium seats holding handmade signs and making shaka gestures."
     }
   ]
 }
