@@ -84,15 +84,15 @@ a.linklist__row:hover { text-decoration: underline; }
 
 /* Quiet botanical accents remain behind the content and ignore pointer events. */
 .hero--coastal { position: relative; isolation: isolate; overflow: clip; }
-.hero--coastal::before { content: ''; position: absolute; width: 29rem; height: 27rem; right: -3rem; top: -3rem; background: url('/media/decor/sage-leaf-pattern.svg') center / contain no-repeat; opacity: .22; transform: rotate(8deg); pointer-events: none; z-index: -1; }
+.hero--coastal::before { content: ''; position: absolute; width: 29rem; height: 27rem; right: -3rem; top: -3rem; background: url('./assets/monstera-pattern.svg') center / contain no-repeat; opacity: .22; transform: rotate(8deg); pointer-events: none; z-index: -1; }
 .hero__greeting { display: inline-flex; align-items: center; gap: .6rem; }
 .hibiscus { width: clamp(3.5rem, 6vw, 5rem); height: auto; transform: rotate(-12deg); }
 .scholarship-feature { position: relative; isolation: isolate; overflow: hidden; }
-.scholarship-feature::after { content: ''; position: absolute; width: 26rem; height: 26rem; right: -4rem; bottom: -6rem; background: url('/media/decor/sage-leaf-pattern.svg') center / contain no-repeat; filter: brightness(2.8) saturate(.45); opacity: .22; transform: rotate(-25deg); pointer-events: none; z-index: -1; }
+.scholarship-feature::after { content: ''; position: absolute; width: 26rem; height: 26rem; right: -4rem; bottom: -6rem; background: url('./assets/monstera-pattern.svg') center / contain no-repeat; filter: brightness(2.8) saturate(.45); opacity: .22; transform: rotate(-25deg); pointer-events: none; z-index: -1; }
 .scholarship { position: relative; isolation: isolate; }
-.scholarship::before { content: ""; position: absolute; right: 2rem; top: 2rem; width: 19rem; height: 19rem; background: url('/media/decor/sage-leaf-pattern.svg') center / contain no-repeat; opacity: .17; pointer-events: none; z-index: -1; }
+.scholarship::before { content: ""; position: absolute; right: 2rem; top: 2rem; width: 19rem; height: 19rem; background: url('./assets/monstera-pattern.svg') center / contain no-repeat; opacity: .17; pointer-events: none; z-index: -1; }
 .scholarship > * { position: relative; }
-.footer::after { content: ''; width: 2.5rem; height: 3rem; background: url('/media/decor/monstera.svg') center / contain no-repeat; opacity: .55; }
+.footer::after { content: ''; width: 2.5rem; height: 3rem; background: url('./assets/monstera.svg') center / contain no-repeat; opacity: .55; }
 @media (max-width: 47.5rem) {
   .hero--coastal::before { width: 18rem; height: 20rem; right: -5rem; top: -2rem; opacity: .14; }
   .scholarship-feature::after { width: 18rem; right: -7rem; opacity: .1; }
