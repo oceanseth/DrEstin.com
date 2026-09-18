@@ -446,6 +446,10 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-15.jpeg",
       "alt": "A referee watching football players in red and white uniforms line up for a play, with spectators in the stands."
+    },
+    {
+      "src": "/media/lahainaluna/team-16.jpeg",
+      "alt": "People gathered on the Lahainaluna football field around floral tributes and a portrait, with the ocean and mountains behind them."
     }
   ]
 }
