@@ -438,6 +438,10 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-13.jpeg",
       "alt": "Lahainaluna football players in red uniforms gathered around a large trophy."
+    },
+    {
+      "src": "/media/lahainaluna/team-14.jpeg",
+      "alt": "Two men in red shirts smiling in stadium seating overlooking a football field and running track."
     }
   ]
 }
