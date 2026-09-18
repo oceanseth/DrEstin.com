@@ -311,6 +311,10 @@ export const work = {
   items: [
     {
       title: 'Urgent care',
+      photo: {
+        src: '/media/clinic-portrait.jpg',
+        alt: 'Dr. Estin outside the Doctors On Call urgent care and testing center.',
+      },
       body:
         'Medical Director of Doctors On Call Urgent Care and Testing Centers, in Kāʻanapali and ' +
         'at the Shops at Wailea. Walk-in urgent and family medicine with on-site lab, X-ray and ' +
@@ -318,6 +322,10 @@ export const work = {
     },
     {
       title: 'Event & sports medicine',
+      photo: {
+        src: '/media/tournaments/ncaa-courtside-medical-team.jpeg',
+        alt: 'Five Doctors On Call medical team members holding their sign on the basketball court at the Maui Invitational.',
+      },
       body:
         'Medical director of the Kapalua Golf Tournaments for the PGA and the Maui Invitational ' +
         'Basketball Tournaments for the NCAA, an NBC Olympic physician at multiple Games, and ' +

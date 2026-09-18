@@ -38,10 +38,10 @@
 .stat__value { font: 2rem Georgia, serif; }
 .stat__label { margin: .5rem 0 0; color: var(--text-dim); font-size: .85rem; }
 .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.7rem; }
-.card { padding: 1.7rem; background: var(--surface); border-radius: 1.1rem; }
+.card { padding: 1.7rem; background: var(--surface); border-radius: 1.1rem; display: flex; flex-direction: column; }
 .card p { margin-top: 1rem; font-size: 1rem; }
-.card__photo { display: block; margin-top: 1.5rem; border-radius: .6rem; overflow: hidden; }
-.card__photo img { display: block; width: 100%; height: auto; }
+.card__photo { display: block; margin-top: auto; padding-top: 1.5rem; }
+.card__photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #e3e4d5; border-radius: .6rem; }
 .scholarship-feature { background: var(--accent); color: #fff; border-radius: 1.1rem; padding: clamp(1.6rem,4vw,3rem); }
 .scholarship-feature h2 { font-size: clamp(2rem,3.7vw,3.1rem); max-width: 21ch; margin-bottom: 1.5rem; }
 .scholarship-feature > p { max-width: var(--measure); }
@@ -71,13 +71,31 @@ a.linklist__row:hover { text-decoration: underline; }
 .team-advisor > p { max-width: var(--measure); margin-bottom: 2rem; }
 .team-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.3rem; align-items: start; }
 .team-gallery a { display: block; background: var(--surface); border-radius: 1rem; overflow: hidden; }
-.team-gallery img { width: 100%; height: auto; }
+.team-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 @media (max-width: 47.5rem) { .team-gallery { grid-template-columns: 1fr; } }
 
 .welcome-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; align-items: start; }
-.welcome-gallery a { display: block; border-radius: 1rem; overflow: hidden; }
-.welcome-gallery img { width: 100%; height: auto; }
+.welcome-gallery a { display: block; border-radius: 1rem; overflow: hidden; background: var(--surface); }
+.welcome-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 @media (max-width: 47.5rem) { .welcome-gallery { grid-template-columns: 1fr; } }
 
 .tournament-group { margin-top: 2.5rem; }
 .tournament-group h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 1.4rem; }
+
+/* Quiet botanical accents remain behind the content and ignore pointer events. */
+.hero--coastal { position: relative; isolation: isolate; overflow: clip; }
+.hero--coastal::before { content: ''; position: absolute; width: 20rem; height: 25rem; right: 0; top: 0; background: url('/media/decor/quiet-palm.svg') center / contain no-repeat; opacity: .17; transform: rotate(12deg); pointer-events: none; z-index: -1; }
+.hero__greeting { display: inline-flex; align-items: center; gap: .6rem; }
+.hibiscus { width: clamp(3.5rem, 6vw, 5rem); height: auto; transform: rotate(-12deg); }
+.scholarship-feature { position: relative; isolation: isolate; overflow: hidden; }
+.scholarship-feature::after { content: ''; position: absolute; width: 21rem; height: 28rem; right: -3rem; bottom: -9rem; background: url('/media/decor/quiet-palm.svg') center / contain no-repeat; filter: brightness(2.8) saturate(.45); opacity: .16; transform: rotate(-25deg); pointer-events: none; z-index: -1; }
+.scholarship { position: relative; isolation: isolate; }
+.scholarship::before { content: ""; position: absolute; right: 2rem; top: 2rem; width: 11rem; height: 15rem; background: url('/media/decor/quiet-palm.svg') center / contain no-repeat; opacity: .12; pointer-events: none; z-index: -1; }
+.scholarship > * { position: relative; }
+.footer::after { content: ''; width: 2.5rem; height: 3rem; background: url('/media/decor/quiet-palm.svg') center / contain no-repeat; opacity: .55; }
+@media (max-width: 47.5rem) {
+  .hero--coastal::before { width: 12rem; height: 17rem; opacity: .1; }
+  .scholarship-feature::after { width: 13rem; right: -5rem; opacity: .1; }
+  .scholarship::before { display: none; }
+  .card__photo { margin-top: 0; }
+}

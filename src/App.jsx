@@ -56,7 +56,7 @@ function Hero() {
         {site.coastal.eyebrow}
       </span>
       <h1>
-        {site.coastal.greeting}<br />{site.coastal.introduction}
+        <span className="hero__greeting">{site.coastal.greeting}<img className="hibiscus" src="/media/decor/hibiscus.svg" alt="" aria-hidden="true" width="80" height="80" /></span><br />{site.coastal.introduction}
       </h1>
       <p className="hero__tagline">{site.tagline}</p>
       <p className="hero__intro">{site.intro}</p>
