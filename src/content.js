@@ -422,6 +422,18 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-10.jpeg",
       "alt": "Two men standing beside the football field after dark."
+    },
+    {
+      "src": "/media/lahainaluna/team-11.jpeg",
+      "alt": "Three staff members holding a Doctors On Call banner on a football stadium sideline."
+    },
+    {
+      "src": "/media/lahainaluna/team-12.jpeg",
+      "alt": "Two masked supporters making shaka gestures beside Lahainaluna football players at sunset."
+    },
+    {
+      "src": "/media/lahainaluna/team-13.jpeg",
+      "alt": "Lahainaluna football players in red uniforms gathered around a large trophy."
     }
   ]
 }
