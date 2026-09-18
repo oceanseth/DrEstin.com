@@ -497,6 +497,14 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-13.jpeg",
       "alt": "Two Doctors On Call team members with their sign courtside at the 2016 Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-14.jpeg",
+      "alt": "A medical team member between two Doctors On Call golf carts at a golf event, with spectators and the ocean behind him."
+    },
+    {
+      "src": "/media/tournaments/tournament-15.jpeg",
+      "alt": "A man beside a decorated Doctors On Call golf cart near the beach."
     }
   ]
 }
