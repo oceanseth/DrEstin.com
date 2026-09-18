@@ -238,6 +238,10 @@ export const welcome = {
   "label": "Maui wildfire response photographs and images",
   "photos": [
     {
+      "src": "/media/wildfires/community-recovery-outdoors.jpeg",
+      "alt": "Two people smiling outdoors, one wearing a navy Doctors On Call polo and making a shaka gesture, with mountains and a faint rainbow behind them."
+    },
+    {
       "src": "/media/wildfires/lahaina-fire-aftermath-ocean.jpeg",
       "alt": "Fire-damaged buildings and trees in Lahaina, with a tall smokestack still standing and boats on the ocean beyond."
     },
