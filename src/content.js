@@ -279,3 +279,50 @@ export const scholarship = {
   contactEmail: 'lhsf08@yahoo.com',
   contactTitle: 'LHS Foundation Executive Director',
 }
+
+export const teamAdvisor = {
+  "heading": "Lahainaluna Team Medical Advisor",
+  "body": "Dr. Estin and the Doctors on Call Staff have been team physicians and Medical Advisors for many years",
+  "photos": [
+    {
+      "src": "/media/lahainaluna/team-01.jpeg",
+      "alt": "A man wearing a red Lahainaluna polo and lei during a televised football interview."
+    },
+    {
+      "src": "/media/lahainaluna/team-02.jpeg",
+      "alt": "Football players in red helmets watching a nighttime game from the sideline."
+    },
+    {
+      "src": "/media/lahainaluna/team-03.jpeg",
+      "alt": "Spectators filling the stadium stands beneath the press box."
+    },
+    {
+      "src": "/media/lahainaluna/team-04.jpeg",
+      "alt": "Fans gathered beneath the stadium press box at night."
+    },
+    {
+      "src": "/media/lahainaluna/team-05.jpeg",
+      "alt": "Lahainaluna players in red uniforms facing the crowded grandstand."
+    },
+    {
+      "src": "/media/lahainaluna/team-06.jpeg",
+      "alt": "Two supporters wearing red shirts smiling together at a nighttime game."
+    },
+    {
+      "src": "/media/lahainaluna/team-07.jpeg",
+      "alt": "A group posing with certificates in front of a Lahainaluna backdrop."
+    },
+    {
+      "src": "/media/lahainaluna/team-08.jpeg",
+      "alt": "A photographer beside the football field with mountains in the background."
+    },
+    {
+      "src": "/media/lahainaluna/team-09.jpeg",
+      "alt": "An illuminated scoreboard displaying Lunas Strong at night."
+    },
+    {
+      "src": "/media/lahainaluna/team-10.jpeg",
+      "alt": "Two men standing beside the football field after dark."
+    }
+  ]
+}

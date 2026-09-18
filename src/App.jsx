@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { contact, links, news, scholarship, site, welcome, work } from './content'
+import { contact, links, news, scholarship, site, teamAdvisor, welcome, work } from './content'
 import './App.css'
 
 const NAV = [
@@ -201,6 +201,17 @@ function Welcome() {
           </div>
         ))}
       </dl>
+      <section className="team-advisor" aria-labelledby="team-advisor-heading">
+        <h2 id="team-advisor-heading">{teamAdvisor.heading}</h2>
+        <p>{teamAdvisor.body}</p>
+        <div className="team-gallery">
+          {teamAdvisor.photos.map((photo) => (
+            <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
+              <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+            </a>
+          ))}
+        </div>
+      </section>
     </Section>
   )
 }
