@@ -365,7 +365,7 @@ export const scholarship = {
     'The Dr. Norm Estin Healthcare Scholarship Fund is a unique, physician-sponsored scholarship fund specifically directed toward developing and supporting Lahainaluna High School students pursuing education and careers in healthcare professions.',
     'Your contribution helps local students achieve their educational goals and prepare for a future in healthcare, strengthening the future of healthcare on Maui.',
   ],
-  giveLabel: 'GIVE NOW',
+  giveLabel: 'Participate Now',
   donationUrl: 'https://secure.etransfer.com/eft/flexblockcode/donation1.cfm?d2org=LHSF&d2tool=donate',
   donationIntro: 'Make a secure online contribution to the Dr. Norm Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
   pendingLabel: 'Online giving link coming soon. You can contribute by mail below.',
@@ -434,6 +434,49 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-13.jpeg",
       "alt": "Lahainaluna football players in red uniforms gathered around a large trophy."
+    }
+  ]
+}
+
+export const tournament = {
+  "heading": "Tournament Medical Director",
+  "body": "Dr. Estin and the Doctors On Call team have been team physicians, medical directors, and medical advisors for numerous golf events at Kapalua and national-level basketball tournaments, such as the Maui Invitational. We have also been the medical provider for numerous local athletic events, such as surfing.",
+  "photos": [
+    {
+      "src": "/media/tournaments/tournament-01.jpeg",
+      "alt": "Two Doctors On Call team members holding a sign at an outdoor athletic event."
+    },
+    {
+      "src": "/media/tournaments/tournament-02.jpeg",
+      "alt": "Two women wearing leis hold a Doctors On Call sign at the XTERRA World Championship finish line."
+    },
+    {
+      "src": "/media/tournaments/tournament-03.jpeg",
+      "alt": "Dr. Estin holding a Doctors On Call sign beneath the XTERRA World Championship arch."
+    },
+    {
+      "src": "/media/tournaments/tournament-04.jpeg",
+      "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-05.jpeg",
+      "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
+    },
+    {
+      "src": "/media/tournaments/tournament-06.jpeg",
+      "alt": "Dr. Estin and a colleague making shaka gestures at a beach surfing event."
+    },
+    {
+      "src": "/media/tournaments/tournament-07.jpeg",
+      "alt": "Participants, event tents, picnic tables, and colorful surfboards on the beach."
+    },
+    {
+      "src": "/media/tournaments/tournament-08.jpeg",
+      "alt": "Five Doctors On Call team members in red shirts holding a sign beside a basketball court."
+    },
+    {
+      "src": "/media/tournaments/tournament-09.jpeg",
+      "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
     }
   ]
 }
