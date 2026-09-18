@@ -450,6 +450,18 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-16.jpeg",
       "alt": "People gathered on the Lahainaluna football field around floral tributes and a portrait, with the ocean and mountains behind them."
+    },
+    {
+      "src": "/media/lahainaluna/team-17.jpeg",
+      "alt": "Lahainaluna football players in red uniforms lining up against an opposing team during a nighttime game."
+    },
+    {
+      "src": "/media/lahainaluna/team-18.jpeg",
+      "alt": "Lahainaluna players standing together on the sideline at dusk, with helmets lined up beside a photographer."
+    },
+    {
+      "src": "/media/lahainaluna/team-19.jpeg",
+      "alt": "Four supporters and sports medicine staff posing beside a football field in front of crowded stadium stands."
     }
   ]
 }
