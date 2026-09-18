@@ -156,6 +156,70 @@ export const welcome = {
     {
       "src": "/media/covid/covid-16.jpeg",
       "alt": "Laboratory instruments and supplies on a clinic countertop beside a sink."
+    },
+    {
+      "src": "/media/covid/covid-17.jpeg",
+      "alt": "An empty sandy beach beside palm trees and an oceanfront resort."
+    },
+    {
+      "src": "/media/covid/covid-18.jpeg",
+      "alt": "A quiet beach with calm ocean water, palm trees, and hotels beneath a cloudy blue sky."
+    },
+    {
+      "src": "/media/covid/covid-19.jpeg",
+      "alt": "Dr. Estin wearing a surgical mask and blue glove while making a shaka gesture outdoors."
+    },
+    {
+      "src": "/media/covid/covid-20.jpeg",
+      "alt": "Aerial view of beachfront hotels, golf courses, and sailboats along the Maui coastline."
+    },
+    {
+      "src": "/media/covid/covid-21.jpeg",
+      "alt": "An empty beach with palm-tree shadows and turquoise ocean water."
+    },
+    {
+      "src": "/media/covid/covid-22.png",
+      "alt": "A worker in protective clothing organizing paperwork in clear bins; paperwork details obscured for privacy."
+    },
+    {
+      "src": "/media/covid/covid-23.jpeg",
+      "alt": "A quiet waterfront street in Lahaina with storefronts and an oceanfront walkway."
+    },
+    {
+      "src": "/media/covid/covid-24.jpeg",
+      "alt": "Aerial view of a large field filled with tightly packed rows of parked cars."
+    },
+    {
+      "src": "/media/covid/covid-25.jpeg",
+      "alt": "A broad empty beach curving past oceanfront hotels, with sailboats offshore."
+    },
+    {
+      "src": "/media/covid/covid-26.jpeg",
+      "alt": "A humorous Passport Stamps in 2020 graphic featuring rooms at home, Facebook, and Zoom meetings."
+    },
+    {
+      "src": "/media/covid/covid-27.png",
+      "alt": "Gloved hands preparing testing supplies beside analyzers and timers; paperwork details obscured for privacy."
+    },
+    {
+      "src": "/media/covid/covid-28.jpeg",
+      "alt": "Blue-gloved hands typing on a tablet keyboard beside Doctors On Call paperwork and disinfectant."
+    },
+    {
+      "src": "/media/covid/covid-29.jpeg",
+      "alt": "A newspaper clipping titled Covid Positivity Rate Is Useful but Flawed, with highlighted passages."
+    },
+    {
+      "src": "/media/covid/covid-30.jpeg",
+      "alt": "Masked people and clinic staff outside the open entrance to Doctors On Call."
+    },
+    {
+      "src": "/media/covid/covid-31.jpeg",
+      "alt": "Five white testing instruments arranged on a counter with boxes of medical supplies."
+    },
+    {
+      "src": "/media/covid/covid-32.jpeg",
+      "alt": "A humorous cartoon of an imaginary at-home COVID and everything test."
     }
   ]
 },
