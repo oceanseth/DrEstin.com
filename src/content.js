@@ -505,6 +505,34 @@ export const tournament = {
     {
       "src": "/media/tournaments/tournament-15.jpeg",
       "alt": "A man beside a decorated Doctors On Call golf cart near the beach."
+    },
+    {
+      "src": "/media/tournaments/tournament-16.jpeg",
+      "alt": "Five medical team members in red shirts and leis holding a Doctors On Call sign on a basketball court."
+    },
+    {
+      "src": "/media/tournaments/tournament-17.jpeg",
+      "alt": "Basketball players and photographers gathered around a silver trophy decorated with leis."
+    },
+    {
+      "src": "/media/tournaments/tournament-18.jpeg",
+      "alt": "Five Doctors On Call team members in red shirts seated together in a room at a sporting event."
+    },
+    {
+      "src": "/media/tournaments/tournament-19.jpeg",
+      "alt": "Two medical team members in red shirts seated courtside at a basketball tournament."
+    },
+    {
+      "src": "/media/tournaments/tournament-20.jpeg",
+      "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
+    },
+    {
+      "src": "/media/tournaments/tournament-21.jpeg",
+      "alt": "A man holding a Doctors On Call sign in the stands overlooking a tennis court."
+    },
+    {
+      "src": "/media/tournaments/tournament-22.jpeg",
+      "alt": "A group posing on a golf course around a golfer holding a trophy and wearing a lei."
     }
   ]
 }
