@@ -211,10 +211,14 @@ function Welcome() {
             <div className="team-gallery">
               {group.photos.map((photo) => (
                 <figure className="tournament-photo" key={photo.src}>
-                  <a href={photo.href || photo.src} target="_blank" rel="noopener noreferrer" aria-label={photo.caption || `Open full photo: ${photo.alt}`}>
+                  <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
                     <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
                   </a>
-                  {photo.caption && <figcaption>{photo.caption}</figcaption>}
+                  {photo.movieUrl && (
+                    <figcaption>
+                      <a className="btn btn--primary movie-bit-button" href={photo.movieUrl} target="_blank" rel="noopener noreferrer">{photo.movieLabel}</a>
+                    </figcaption>
+                  )}
                 </figure>
               ))}
             </div>

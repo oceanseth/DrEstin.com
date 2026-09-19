@@ -537,8 +537,8 @@ export const tournament = {
         {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
         {
           "src": "/media/tournaments/tournament-20.jpeg",
-          "href": "https://www.youtube.com/watch?v=hoe24aSvLtw",
-          "caption": "Click this photo to see my favorite movie clip",
+          "movieUrl": "https://www.youtube.com/watch?v=hoe24aSvLtw",
+          "movieLabel": "Click here for one of my favorite movie bits",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
         {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},

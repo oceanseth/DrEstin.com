@@ -103,6 +103,7 @@ a.linklist__row:hover { text-decoration: underline; }
 
 .tournament-photo { margin: 0; }
 .tournament-photo figcaption { margin-top: .6rem; font-size: .95rem; }
+.team-gallery .movie-bit-button { display: inline-flex; background: var(--accent); color: #fff; text-align: center; border-radius: 2rem; }
 /* Match image heights while preserving both photographs' proportions. */
 .community-gallery { display: grid; grid-template-columns: 1.307fr 1fr; gap: 1.8rem; align-items: start; margin-top: 1.4rem; }
 .community-photo { margin: 0; aspect-ratio: 890 / 882; overflow: hidden; border-radius: 1rem; }
