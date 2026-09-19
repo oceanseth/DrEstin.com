@@ -214,9 +214,11 @@ function Welcome() {
                   <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
                     <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
                   </a>
-                  {photo.movieUrl && (
-                    <figcaption>
-                      <a className="btn btn--primary movie-bit-button" href={photo.movieUrl} target="_blank" rel="noopener noreferrer">{photo.movieLabel}</a>
+                  {photo.movieUrls && (
+                    <figcaption className="movie-bit-buttons">
+                      {photo.movieUrls.map((url, index) => (
+                        <a key={url} className="btn btn--primary movie-bit-button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${photo.movieLabel} — video ${index + 1}`}>{photo.movieLabel}</a>
+                      ))}
                     </figcaption>
                   )}
                 </figure>
