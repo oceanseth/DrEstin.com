@@ -661,7 +661,7 @@ export const tournament = {
     },
     {
       "id": "miscellaneous-sports",
-      "heading": "Other sporting event Medical advisor positions",
+      "heading": "Additional sporting events",
       "photos": [
         {
           "src": "/media/tournaments/tournament-01.jpeg",
