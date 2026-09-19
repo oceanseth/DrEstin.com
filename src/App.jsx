@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { contact, links, scholarship, site, teamAdvisor, tournament, welcome, work } from './content'
+import { community, contact, links, scholarship, site, teamAdvisor, tournament, welcome, work } from './content'
 import './App.css'
 
 const NAV = [
@@ -210,9 +210,12 @@ function Welcome() {
             <h3 id={group.id}>{group.heading}</h3>
             <div className="team-gallery">
               {group.photos.map((photo) => (
-                <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
-                  <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
-                </a>
+                <figure className="tournament-photo" key={photo.src}>
+                  <a href={photo.href || photo.src} target="_blank" rel="noopener noreferrer" aria-label={photo.caption || `Open full photo: ${photo.alt}`}>
+                    <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+                  </a>
+                  {photo.caption && <figcaption>{photo.caption}</figcaption>}
+                </figure>
               ))}
             </div>
           </section>
@@ -247,6 +250,21 @@ function Work() {
               </a>
             )}
           </article>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+function Community() {
+  return (
+    <Section id="community" heading={community.heading}>
+      <p>{community.body}</p>
+      <div className="community-gallery">
+        {community.photos.map((photo) => (
+          <figure className={`community-photo${photo.presentation === 'certificate' ? ' community-photo--certificate' : ''}`} key={photo.src}>
+            <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+          </figure>
         ))}
       </div>
     </Section>
@@ -340,16 +358,39 @@ function Scholarship() {
           <a className="btn btn--primary" href={scholarship.donationUrl || '#give-now'} target={scholarship.donationUrl ? '_blank' : undefined} rel={scholarship.donationUrl ? 'noopener noreferrer' : undefined}>{scholarship.giveLabel}</a>
         </div>
       </section>
+      <section className="section shell recipient" aria-labelledby="recipient-heading">
+        <div className="recipient__card">
+          <div className="recipient__visuals">
+            <figure className="recipient__portrait">
+              <svg viewBox="110 355 443 555" role="img" aria-label={scholarship.recipient.portraitAlt}>
+                <image href={scholarship.recipient.source.src} width="2048" height="1186" />
+              </svg>
+              <figcaption>{scholarship.recipient.name}</figcaption>
+            </figure>
+            <svg className="recipient__logo" viewBox="577 353 448 448" role="img" aria-label={scholarship.recipient.logoAlt}>
+              <image href={scholarship.recipient.source.src} width="2048" height="1186" />
+            </svg>
+          </div>
+          <div className="recipient__copy">
+            <h2 id="recipient-heading">{scholarship.recipient.heading}</h2>
+            <p>{scholarship.recipient.body}</p>
+            <p className="recipient__congratulations">{scholarship.recipient.congratulations}</p>
+          </div>
+        </div>
+      </section>
       <Section id="give-now" heading={scholarship.giveLabel}>
         <div className="welcome__letter scholarship__details">
           <p>{scholarship.donationIntro}</p>
+          <p>{scholarship.donationReminder}</p>
           {scholarship.donationUrl ? (
             <a className="btn btn--primary" href={scholarship.donationUrl} target="_blank" rel="noopener noreferrer">{scholarship.giveLabel}</a>
           ) : <p className="contact__note">{scholarship.pendingLabel}</p>}
           <p>{scholarship.taxNote}</p>
+          <p>{scholarship.donationReminder}</p>
           <h3>{scholarship.mailHeading}</h3>
           <address>{scholarship.address.map((line) => <div key={line}>{line}</div>)}</address>
           <p>{scholarship.checkInstructions}</p>
+          <p>{scholarship.donationReminder}</p>
           <h3>{scholarship.contactHeading}</h3>
           <p>
             {scholarship.contactName}<br />{scholarship.contactTitle}<br />
@@ -374,6 +415,7 @@ export default function App() {
         <Hero />
         <Welcome />
         <Work />
+        <Community />
         <ScholarshipFeature />
         <Links />
         <Contact />

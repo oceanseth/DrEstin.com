@@ -99,3 +99,28 @@ a.linklist__row:hover { text-decoration: underline; }
   .scholarship::before { display: none; }
   .card__photo { margin-top: 0; }
 }
+
+
+.tournament-photo { margin: 0; }
+.tournament-photo figcaption { margin-top: .6rem; font-size: .95rem; }
+/* Match image heights while preserving both photographs' proportions. */
+.community-gallery { display: grid; grid-template-columns: 1.307fr 1fr; gap: 1.8rem; align-items: start; margin-top: 1.4rem; }
+.community-photo { margin: 0; aspect-ratio: 890 / 882; overflow: hidden; border-radius: 1rem; }
+.community-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.community-photo--certificate { aspect-ratio: 1699 / 2200; border-radius: .4rem; }
+.community-photo--certificate img { transform: rotate(1deg) scale(1.04); }
+@media (max-width: 47.5rem) {
+  .community-gallery { grid-template-columns: 1fr; }
+  .community-photo--certificate { width: 76.5%; justify-self: center; }
+}
+
+.recipient__card { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: center; padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid var(--border); border-radius: 1.2rem; background: #fff; }
+.recipient__visuals { display: grid; grid-template-columns: 1.65fr 1fr; gap: 1.25rem; align-items: center; }
+.recipient__portrait { margin: 0; }
+.recipient__portrait svg { display: block; width: 100%; border-radius: .7rem; overflow: hidden; }
+.recipient__portrait figcaption { margin-top: .8rem; text-align: center; font-weight: 700; font-size: 1.1rem; }
+.recipient__logo { width: 100%; overflow: hidden; clip-path: circle(50%); }
+.recipient__copy h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); line-height: 1.2; margin-bottom: 1.4rem; }
+.recipient__copy p { margin-top: 1rem; line-height: 1.7; }
+.recipient__congratulations { font-weight: 700; color: var(--accent); }
+@media (max-width: 47.5rem) { .recipient__card { grid-template-columns: 1fr; } .recipient__visuals { max-width: 26rem; margin-inline: auto; } }

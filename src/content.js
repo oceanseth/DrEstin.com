@@ -338,6 +338,7 @@ export const work = {
         'School — a mentorship program connecting young people to careers in healthcare, and a ' +
         'personal scholarship program for students entering medicine and nursing.',
     },
+
   ],
 }
 
@@ -378,6 +379,15 @@ export const contact = {
 }
 
 export const scholarship = {
+  recipient: {
+    heading: 'We already have a 2026–2027 recipient of the Dr. Norman Estin Healthcare Scholarship!',
+    name: 'Asialyn Andres',
+    body: 'Asialyn Andres was a distinguished valedictorian at Lahainaluna High School and has already earned her credential as a certified nurse’s aide. She is pursuing further education to become a registered nurse, with the hope of specializing in pediatrics.',
+    congratulations: 'Congratulations, Asialyn, for your initiative and hard work!',
+    source: { src: '/media/scholarship-recipient-2026-2027.png', alt: 'Scholarship announcement featuring Asialyn Andres and the Lahainaluna High School emblem.' },
+    portraitAlt: 'Portrait of scholarship recipient Asialyn Andres.',
+    logoAlt: 'Lahainaluna High School emblem.',
+  },
   navLabel: 'Scholarship',
   heading: 'Support the Future of Healthcare on Maui',
   lede: 'Join Dr. Norm Estin in supporting the next generation of healthcare professionals on Maui.',
@@ -387,6 +397,7 @@ export const scholarship = {
   ],
   giveLabel: 'Participate Now',
   donationUrl: 'https://secure.etransfer.com/eft/flexblockcode/donation1.cfm?d2org=LHSF&d2tool=donate',
+  donationReminder: 'Please make sure your donation specifies the Dr. Norman Estin Healthcare Scholarship.',
   donationIntro: 'Make a secure online contribution to the Dr. Norm Estin Healthcare Scholarship Fund through the Lahainaluna High School Foundation.',
   pendingLabel: 'Online giving link coming soon. You can contribute by mail below.',
   taxNote: 'Contributions to the Dr. Norm Estin Healthcare Scholarship Fund are administered through the Lahainaluna High School Foundation, a 501(c)(3) organization. All donations to this fund are tax deductible.',
@@ -404,20 +415,12 @@ export const teamAdvisor = {
   "body": "Dr. Estin and the Doctors on Call Staff have been team physicians and Medical Advisors for many years",
   "photos": [
     {
-      "src": "/media/lahainaluna/team-01.jpeg",
-      "alt": "A man wearing a red Lahainaluna polo and lei during a televised football interview."
-    },
-    {
       "src": "/media/lahainaluna/team-02.jpeg",
       "alt": "Football players in red helmets watching a nighttime game from the sideline."
     },
     {
       "src": "/media/lahainaluna/team-03.jpeg",
       "alt": "Spectators filling the stadium stands beneath the press box."
-    },
-    {
-      "src": "/media/lahainaluna/team-04.jpeg",
-      "alt": "Fans gathered beneath the stadium press box at night."
     },
     {
       "src": "/media/lahainaluna/team-05.jpeg",
@@ -438,10 +441,6 @@ export const teamAdvisor = {
     {
       "src": "/media/lahainaluna/team-09.jpeg",
       "alt": "An illuminated scoreboard displaying Lunas Strong at night."
-    },
-    {
-      "src": "/media/lahainaluna/team-10.jpeg",
-      "alt": "Two men standing beside the football field after dark."
     },
     {
       "src": "/media/lahainaluna/team-11.jpeg",
@@ -527,9 +526,10 @@ export const teamAdvisor = {
 }
 
 export const tournament = {
-  "heading": "Tournament Medical Director",
+  "heading": "Athletic Tournament Medical Director",
   "body": "Dr. Estin and the Doctors On Call team have been team physicians, medical directors, and medical advisors for numerous golf events at Kapalua and national-level basketball tournaments, such as the Maui Invitational. We have also been the medical provider for numerous local athletic events, such as surfing.",
   "groups": [
+    {"id": "nbc-olympics", "heading": "NBC Olympic Physician, starting in 2000", "photos": []},
     {
       "id": "ncaa-basketball",
       "heading": "NCAA Maui Invitational Basketball",
@@ -537,6 +537,8 @@ export const tournament = {
         {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
         {
           "src": "/media/tournaments/tournament-20.jpeg",
+          "href": "https://www.youtube.com/watch?v=hoe24aSvLtw",
+          "caption": "Click this photo to see my favorite movie clip",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
         {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},
@@ -736,4 +738,13 @@ export const tournament = {
       ]
     }
   ]
+}
+
+export const community = {
+  heading: 'Moving Forward with the Community',
+  body: 'The mayor of Maui, the Honorable Richard Bissen, presented a certificate of achievement and appreciation recognizing decades of medical work serving West Maui and the entire county.',
+  photos: [
+    { src: '/media/mayor-bissen-certificate.jpeg', alt: 'Dr. Norm Estin wearing leis and standing with Mayor Richard Bissen as they hold a framed certificate.' },
+    { src: '/media/mayor-recognition-certificate.png', presentation: 'certificate', alt: 'Certificate of Recognition presented to Dr. Norman Estin by Mayor Richard T. Bissen, Jr., on June 13, 2026, honoring more than four decades of medical care and community service in Maui and Hawaiʻi.' },
+  ],
 }
