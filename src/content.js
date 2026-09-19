@@ -310,8 +310,8 @@ export const work = {
     {
       title: 'Urgent care',
       photo: {
-        src: '/media/clinic-portrait.jpg',
-        alt: 'Dr. Estin outside the Doctors On Call urgent care and testing center.',
+        src: '/media/urgent-care-portrait.png',
+        alt: 'Dr. Norm Estin smiling in glasses, a blue cap, and a navy polo shirt.',
       },
       body:
         'Medical Director of Doctors On Call Urgent Care and Testing Centers, in Kāʻanapali and ' +
