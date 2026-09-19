@@ -11,6 +11,7 @@ export const site = {
     introduction: 'I’m Dr. Norm Estin.',
     storyAction: 'Click here for one of my favorite movie bits',
     storyUrl: 'https://www.youtube.com/watch?v=hoe24aSvLtw',
+    olympicsMovieUrl: 'https://www.youtube.com/watch?v=GE12zeIyPx0',
     scholarshipAction: 'Support Maui Students and Education in Healthcare',
     storyHeading: 'A life in medicine. A home on Maui.',
     letterAction: 'Read my full welcome letter',
@@ -538,8 +539,8 @@ export const tournament = {
         {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
         {
           "src": "/media/tournaments/tournament-20.jpeg",
-          "movieStartNumber": 2,
-          "movieUrls": ["https://www.youtube.com/watch?v=GE12zeIyPx0", "https://youtube.com/shorts/J60oDCb61mU", "https://youtu.be/jWau06EsfRY"],
+          "movieStartNumber": 3,
+          "movieUrls": ["https://youtube.com/shorts/J60oDCb61mU", "https://youtu.be/jWau06EsfRY"],
           "movieLabel": "Click here for one of my favorite movie bits",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },

@@ -194,6 +194,7 @@ function Welcome() {
       </div>
       </details>
 
+      <div className="stats-with-movie">
       <dl className="stats stats--row">
         {welcome.stats.map((stat) => (
           <div key={stat.label}>
@@ -202,6 +203,8 @@ function Welcome() {
           </div>
         ))}
       </dl>
+      <a className="btn btn--primary stats-movie-button" href={site.coastal.olympicsMovieUrl} target="_blank" rel="noopener noreferrer">{site.coastal.storyAction}</a>
+      </div>
       <section className="team-advisor" aria-labelledby="tournament-heading">
         <h2 id="tournament-heading">{tournament.heading}</h2>
         <p>{tournament.body}</p>

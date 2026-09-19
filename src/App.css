@@ -126,3 +126,8 @@ a.linklist__row:hover { text-decoration: underline; }
 .recipient__copy p { margin-top: 1rem; line-height: 1.7; }
 .recipient__congratulations { font-weight: 700; color: var(--accent); }
 @media (max-width: 47.5rem) { .recipient__card { grid-template-columns: 1fr; } .recipient__visuals { max-width: 26rem; margin-inline: auto; } }
+
+.stats-with-movie { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1.3fr); align-items: center; gap: 2rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.stats-with-movie .stats { margin: 0; padding: 0; border: 0; }
+.stats-movie-button { text-align: center; }
+@media (max-width: 47.5rem) { .stats-with-movie { grid-template-columns: 1fr; } .stats-movie-button { justify-self: start; } }
