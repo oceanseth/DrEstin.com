@@ -538,7 +538,7 @@ export const tournament = {
         {
           "src": "/media/tournaments/tournament-20.jpeg",
           "movieStartNumber": 3,
-          "movieUrls": ["https://youtube.com/shorts/J60oDCb61mU"],
+          "movieUrls": ["https://www.youtube.com/watch?v=6wchqfLA5d0"],
           "movieLabel": "Click here for one of my favorite movie bits",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
