@@ -8,7 +8,7 @@ export const site = {
   coastal: {
     greeting: 'Aloha.',
     introduction: 'I’m Dr. Norm Estin.',
-    storyAction: 'Click here for one of my favorite movie bits',
+    storyAction: 'Click here for a classic doctor bit',
     storyUrl: 'https://www.youtube.com/watch?v=hoe24aSvLtw',
     olympicsMovieUrl: 'https://www.youtube.com/watch?v=GE12zeIyPx0',
     storyHeading: 'A life in medicine. A home on Maui.',
@@ -539,7 +539,7 @@ export const tournament = {
           "src": "/media/tournaments/tournament-20.jpeg",
           "movieStartNumber": 3,
           "movieUrls": ["https://www.youtube.com/watch?v=6wchqfLA5d0"],
-          "movieLabel": "Click here for one of my favorite movie bits",
+          "movieLabel": "Click here for a classic doctor bit",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
         {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},
@@ -616,7 +616,7 @@ export const tournament = {
           "src": "/media/tournaments/tournament-44.jpeg",
           "movieStartNumber": 4,
           "movieUrls": ["https://youtu.be/jWau06EsfRY"],
-          "movieLabel": "Click here for one of my favorite movie bits",
+          "movieLabel": "Click here for a classic doctor bit",
           "moviePlacement": "side",
           "alt": "A broadcaster wearing a headset and leis, holding a bowl of pineapple beside the basketball court."
         }
