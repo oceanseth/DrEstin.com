@@ -61,6 +61,9 @@ function Hero() {
         <a className="btn btn--primary" href={site.coastal.storyUrl} target="_blank" rel="noopener noreferrer">
           {site.coastal.storyAction}
         </a>
+        <a className="btn btn--primary hero__another-clip" href={site.coastal.anotherClipUrl} target="_blank" rel="noopener noreferrer">
+          {site.coastal.anotherClipLabel}
+        </a>
       </div>
       </div>
       {portrait && <figure className="hero__portrait"><img src={portrait.src} alt={portrait.alt} fetchPriority="high" /></figure>}

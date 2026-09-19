@@ -10,6 +10,8 @@ export const site = {
     introduction: 'I’m Dr. Norm Estin.',
     storyAction: 'Click here for a classic doctor bit',
     storyUrl: 'https://www.youtube.com/watch?v=hoe24aSvLtw',
+    anotherClipLabel: 'Click here for another great Dr. Bitz',
+    anotherClipUrl: 'https://youtu.be/-i8MHAWJdm8',
     olympicsMovieUrl: 'https://www.youtube.com/watch?v=GE12zeIyPx0',
     storyHeading: 'A life in medicine. A home on Maui.',
     letterAction: 'Read my full welcome letter',
