@@ -390,7 +390,7 @@ export const scholarship = {
   },
   navLabel: 'Scholarship',
   heading: 'Support the Future of Healthcare on Maui',
-  lede: 'Join Dr. Norm Estin in supporting the next generation of healthcare professionals on Maui.',
+  lede: 'You yourself can make a difference in creating the next generation of healthcare professionals on Maui.',
   paragraphs: [
     'The Dr. Norm Estin Healthcare Scholarship Fund is a unique, physician-sponsored scholarship fund specifically directed toward developing and supporting Lahainaluna High School students pursuing education and careers in healthcare professions.',
     'Your contribution helps local students achieve their educational goals and prepare for a future in healthcare, strengthening the future of healthcare on Maui.',
