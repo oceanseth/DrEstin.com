@@ -52,9 +52,6 @@ function Hero() {
   return (
     <section className="hero hero--coastal shell" id="top">
       <div className="hero__copy">
-      <span className="hero__eyebrow">
-        {site.coastal.eyebrow}
-      </span>
       <h1>
         <span className="hero__greeting">{site.coastal.greeting}<img className="hibiscus" src="/media/decor/hibiscus-botanical.svg" alt="" aria-hidden="true" width="80" height="80" /></span><br />{site.coastal.introduction}
       </h1>
@@ -64,7 +61,6 @@ function Hero() {
         <a className="btn btn--primary" href={site.coastal.storyUrl} target="_blank" rel="noopener noreferrer">
           {site.coastal.storyAction}
         </a>
-        <a className="btn btn--ghost" href="/scholarship">{site.coastal.scholarshipAction}</a>
       </div>
       </div>
       {portrait && <figure className="hero__portrait"><img src={portrait.src} alt={portrait.alt} fetchPriority="high" /></figure>}

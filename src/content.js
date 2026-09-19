@@ -6,13 +6,11 @@
 
 export const site = {
   coastal: {
-    eyebrow: 'Medicine with aloha',
     greeting: 'Aloha.',
     introduction: 'I’m Dr. Norm Estin.',
     storyAction: 'Click here for one of my favorite movie bits',
     storyUrl: 'https://www.youtube.com/watch?v=hoe24aSvLtw',
     olympicsMovieUrl: 'https://www.youtube.com/watch?v=GE12zeIyPx0',
-    scholarshipAction: 'Support Maui Students and Education in Healthcare',
     storyHeading: 'A life in medicine. A home on Maui.',
     letterAction: 'Read my full welcome letter',
     nextGeneration: 'The next generation',
