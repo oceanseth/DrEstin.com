@@ -308,7 +308,7 @@ export const work = {
   heading: 'What I do',
   items: [
     {
-      title: 'Urgent care',
+      title: 'Urgent Care',
       photo: {
         src: '/media/urgent-care-portrait.png',
         alt: 'Dr. Norm Estin smiling in glasses, a blue cap, and a navy polo shirt.',
