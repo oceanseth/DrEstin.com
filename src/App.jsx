@@ -213,7 +213,7 @@ function Welcome() {
             <h3 id={group.id}>{group.heading}</h3>
             <div className="team-gallery">
               {group.photos.map((photo) => (
-                <figure className="tournament-photo" key={photo.src}>
+                <figure className={`tournament-photo${photo.moviePlacement === 'side' ? ' tournament-photo--side-button' : ''}`} key={photo.src}>
                   <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
                     <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
                   </a>

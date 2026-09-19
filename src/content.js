@@ -540,7 +540,7 @@ export const tournament = {
         {
           "src": "/media/tournaments/tournament-20.jpeg",
           "movieStartNumber": 3,
-          "movieUrls": ["https://youtube.com/shorts/J60oDCb61mU", "https://youtu.be/jWau06EsfRY"],
+          "movieUrls": ["https://youtube.com/shorts/J60oDCb61mU"],
           "movieLabel": "Click here for one of my favorite movie bits",
           "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
         },
@@ -616,6 +616,10 @@ export const tournament = {
         },
         {
           "src": "/media/tournaments/tournament-44.jpeg",
+          "movieStartNumber": 4,
+          "movieUrls": ["https://youtu.be/jWau06EsfRY"],
+          "movieLabel": "Click here for one of my favorite movie bits",
+          "moviePlacement": "side",
           "alt": "A broadcaster wearing a headset and leis, holding a bowl of pineapple beside the basketball court."
         }
       ]

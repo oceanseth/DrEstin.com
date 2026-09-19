@@ -131,3 +131,7 @@ a.linklist__row:hover { text-decoration: underline; }
 .stats-with-movie .stats { margin: 0; padding: 0; border: 0; }
 .stats-movie-button { text-align: center; }
 @media (max-width: 47.5rem) { .stats-with-movie { grid-template-columns: 1fr; } .stats-movie-button { justify-self: start; } }
+
+.tournament-photo--side-button { grid-column: span 2; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 1.3rem; }
+.tournament-photo--side-button figcaption { margin-top: 0; }
+@media (max-width: 47.5rem) { .tournament-photo--side-button { grid-column: auto; grid-template-columns: 1fr; } }
