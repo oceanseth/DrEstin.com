@@ -742,7 +742,7 @@ export const tournament = {
 
 export const community = {
   heading: 'Moving Forward with the Community',
-  body: 'The mayor of Maui, the Honorable Richard Bissen, presented a certificate of achievement and appreciation recognizing decades of medical work serving West Maui and the entire county.',
+  body: 'The mayor of Maui, the Honorable Richard Bissen...',
   photos: [
     { src: '/media/mayor-bissen-certificate.jpeg', alt: 'Dr. Norm Estin wearing leis and standing with Mayor Richard Bissen as they hold a framed certificate.' },
     { src: '/media/mayor-recognition-certificate.png', presentation: 'certificate', alt: 'Certificate of Recognition presented to Dr. Norman Estin by Mayor Richard T. Bissen, Jr., on June 13, 2026, honoring more than four decades of medical care and community service in Maui and Hawaiʻi.' },
