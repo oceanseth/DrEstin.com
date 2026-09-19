@@ -61,7 +61,7 @@ function Hero() {
       <p className="hero__tagline">{site.tagline}</p>
       <p className="hero__intro">{site.intro}</p>
       <div className="hero__actions">
-        <a className="btn btn--primary" href="#welcome">
+        <a className="btn btn--primary" href={site.coastal.storyUrl} target="_blank" rel="noopener noreferrer">
           {site.coastal.storyAction}
         </a>
         <a className="btn btn--ghost" href="/scholarship">{site.coastal.scholarshipAction}</a>
@@ -217,7 +217,7 @@ function Welcome() {
                   {photo.movieUrls && (
                     <figcaption className="movie-bit-buttons">
                       {photo.movieUrls.map((url, index) => (
-                        <a key={url} className="btn btn--primary movie-bit-button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${photo.movieLabel} — video ${index + 1}`}>{photo.movieLabel}</a>
+                        <a key={url} className="btn btn--primary movie-bit-button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${photo.movieLabel} — video ${index + (photo.movieStartNumber || 1)}`}>{photo.movieLabel}</a>
                       ))}
                     </figcaption>
                   )}
