@@ -319,7 +319,7 @@ export const work = {
         'telemedicine — residents and visitors alike.',
     },
     {
-      title: 'Event & sports medicine',
+      title: 'Event & Sports Medicine',
       photo: {
         src: '/media/tournaments/ncaa-courtside-medical-team.jpeg',
         alt: 'Five Doctors On Call medical team members holding their sign on the basketball court at the Maui Invitational.',
@@ -330,7 +330,7 @@ export const work = {
         'physician at corporate, community and state events.',
     },
     {
-      title: 'Education & the next generation',
+      title: 'Education & the Next Generation',
       photo: {
         src: '/media/education-maui-students.jpg',
         alt: 'Lahaina News clipping showing Doctors On Call staff mentoring a Lahainaluna High School student, with the headline Students learn about the medical field at Doctors On Call.',
