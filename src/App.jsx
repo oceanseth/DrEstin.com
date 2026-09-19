@@ -239,6 +239,9 @@ function Welcome() {
             </a>
           ))}
         </div>
+        <div className="hero__actions">
+          <a className="btn btn--primary" href={teamAdvisor.movieUrl} target="_blank" rel="noopener noreferrer">{teamAdvisor.movieLabel}</a>
+        </div>
       </section>
     </Section>
   )

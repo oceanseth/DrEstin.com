@@ -413,6 +413,8 @@ export const scholarship = {
 }
 
 export const teamAdvisor = {
+  movieLabel: 'Click here for favorite doctor bit',
+  movieUrl: 'https://youtu.be/VOmD-xqK2Es',
   "heading": "Lahainaluna Team Medical Advisor",
   "body": "Dr. Estin and the Doctors on Call Staff have been team physicians and Medical Advisors for many years",
   "photos": [
