@@ -533,7 +533,20 @@ export const tournament = {
   "heading": "Athletic Tournament Medical Director",
   "body": "Dr. Estin and the Doctors On Call team have been team physicians, medical directors, and medical advisors for numerous golf events at Kapalua and national-level basketball tournaments, such as the Maui Invitational. We have also been the medical provider for numerous local athletic events, such as surfing.",
   "groups": [
-    {"id": "nbc-olympics", "heading": "NBC Olympic Physician, starting in 2000", "photos": []},
+    {
+      "id": "nbc-olympics",
+      "heading": "NBC Olympic Physician, starting in 2000",
+      "photos": [
+        {"src": "/media/olympics/sydney-2000-harbour-bridge.jpeg", "alt": "Sydney Harbour Bridge at night with the Olympic rings illuminated above it."},
+        {"src": "/media/olympics/sydney-2000-opera-house.jpeg", "alt": "Dr. Estin and a colleague holding a Doctors On Call banner in front of the Sydney Opera House."},
+        {"src": "/media/olympics/salt-lake-city-2002.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner beside a snow sports venue at the Salt Lake City Winter Olympics."},
+        {"src": "/media/olympics/athens-2004-acropolis.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner in front of the Acropolis in Athens."},
+        {"src": "/media/olympics/beijing-2008-great-wall.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner on the Great Wall of China."},
+        {"src": "/media/olympics/vancouver-2010-hockey-arena.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner inside a Vancouver 2010 Olympic hockey arena."},
+        {"src": "/media/olympics/london-2012-tower-bridge.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner in front of Tower Bridge with the Olympic rings displayed above it."},
+        {"src": "/media/olympics/london-westminster.jpeg", "alt": "Dr. Estin holding a Doctors On Call banner beside a window overlooking Big Ben and the River Thames."}
+      ]
+    },
     {
       "id": "ncaa-basketball",
       "heading": "NCAA Maui Invitational Basketball",
