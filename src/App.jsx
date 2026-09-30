@@ -164,6 +164,7 @@ function Welcome() {
         <WelcomeVideo />
       </div>
       </div>
+      <Community />
       <details className="welcome__full">
       <summary>{site.coastal.letterAction}</summary>
       <div className="welcome__letter">
@@ -411,7 +412,6 @@ export default function App() {
         <Hero />
         <Welcome />
         <Work />
-        <Community />
         <ScholarshipFeature />
         <Links />
         <Contact />
