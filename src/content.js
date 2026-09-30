@@ -552,16 +552,6 @@ export const tournament = {
       "id": "ncaa-basketball",
       "heading": "NCAA Maui Invitational Basketball",
       "photos": [
-        {"src": "/media/tournaments/ncaa-san-diego-state-1.jpeg", "alt": "Two men smiling and making shaka gestures in a gym beneath a Maui Invitational banner, one wearing a San Diego State shirt."},
-        {
-          "src": "/media/tournaments/tournament-20.jpeg",
-          "movieStartNumber": 3,
-          "movieUrls": ["https://www.youtube.com/watch?v=6wchqfLA5d0"],
-          "movieLabel": "Click here for a classic doctor bit",
-          "alt": "Two Doctors On Call team members smiling beneath a scoreboard at the Maui Invitational."
-        },
-        {"src": "/media/tournaments/ncaa-team-table.jpeg", "alt": "Three people seated around a green table with Maui Jim Maui Invitational banners behind them."},
-        {"src": "/media/tournaments/ncaa-courtside-medical-team.jpeg", "alt": "Five medical team members in red polos holding a Doctors On Call sign on the basketball court at the Maui Invitational."},
         {
           "src": "/media/tournaments/tournament-04.jpeg",
           "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
@@ -573,10 +563,6 @@ export const tournament = {
         {
           "src": "/media/tournaments/tournament-09.jpeg",
           "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
-        },
-        {
-          "src": "/media/tournaments/tournament-12.jpeg",
-          "alt": "Two medical team members in red shirts holding a Doctors On Call sign at the 2012 Maui Invitational."
         },
         {
           "src": "/media/tournaments/tournament-13.jpeg",
@@ -591,18 +577,6 @@ export const tournament = {
           "alt": "Basketball players and photographers gathered around a silver trophy decorated with leis."
         },
         {
-          "src": "/media/tournaments/tournament-18.jpeg",
-          "alt": "Five Doctors On Call team members in red shirts seated together in a room at a sporting event."
-        },
-        {
-          "src": "/media/tournaments/tournament-19.jpeg",
-          "alt": "Two medical team members in red shirts seated courtside at a basketball tournament."
-        },
-        {
-          "src": "/media/tournaments/tournament-34.jpeg",
-          "alt": "Two medical team members in navy polos holding a Doctors On Call sign courtside at the 2018 Maui Invitational."
-        },
-        {
           "src": "/media/tournaments/tournament-35.jpeg",
           "alt": "Doctors On Call staff posing with cheerleaders and a Doctors On Call sign in front of a Maui Jim tournament banner."
         },
@@ -611,24 +585,8 @@ export const tournament = {
           "alt": "Two men smiling and making hand gestures beside the courtside broadcast table as basketball players warm up."
         },
         {
-          "src": "/media/tournaments/tournament-37.jpeg",
-          "alt": "Two medical team members in red polos holding a Doctors On Call sign at the 2018 Maui Invitational."
-        },
-        {
           "src": "/media/tournaments/tournament-40.jpeg",
           "alt": "Four medical team members in red polos standing in front of a Maui Invitational banner."
-        },
-        {
-          "src": "/media/tournaments/tournament-41.jpeg",
-          "alt": "Four medical team members making shaka gestures courtside as basketball players warm up."
-        },
-        {
-          "src": "/media/tournaments/tournament-42.jpeg",
-          "alt": "Three people smiling together in the stands during a Maui Invitational basketball game."
-        },
-        {
-          "src": "/media/tournaments/tournament-43.jpeg",
-          "alt": "Two medical team members in red polos seated beneath the Lahaina Civic Center scoreboard."
         },
         {
           "src": "/media/tournaments/tournament-44.jpeg",
