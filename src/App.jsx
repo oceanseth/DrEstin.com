@@ -57,14 +57,7 @@ function Hero() {
       </h1>
       <p className="hero__tagline">{site.tagline}</p>
       <p className="hero__intro">{site.intro}</p>
-      <div className="hero__actions">
-        <a className="btn btn--primary" href={site.coastal.storyUrl} target="_blank" rel="noopener noreferrer">
-          {site.coastal.storyAction}
-        </a>
-        <a className="btn btn--primary hero__another-clip" href={site.coastal.anotherClipUrl} target="_blank" rel="noopener noreferrer">
-          {site.coastal.anotherClipLabel}
-        </a>
-      </div>
+
       </div>
       {portrait && <figure className="hero__portrait"><img src={portrait.src} alt={portrait.alt} fetchPriority="high" /></figure>}
     </section>
@@ -193,7 +186,7 @@ function Welcome() {
       </div>
       </details>
 
-      <div className="stats-with-movie">
+      <div className="stats-section">
       <dl className="stats stats--row">
         {welcome.stats.map((stat) => (
           <div key={stat.label}>
@@ -202,7 +195,7 @@ function Welcome() {
           </div>
         ))}
       </dl>
-      <a className="btn btn--primary stats-movie-button" href={site.coastal.olympicsMovieUrl} target="_blank" rel="noopener noreferrer">{site.coastal.storyAction}</a>
+      
       </div>
       <section className="team-advisor" aria-labelledby="tournament-heading">
         <h2 id="tournament-heading">{tournament.heading}</h2>
@@ -216,13 +209,7 @@ function Welcome() {
                   <a href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
                     <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
                   </a>
-                  {photo.movieUrls && (
-                    <figcaption className="movie-bit-buttons">
-                      {photo.movieUrls.map((url, index) => (
-                        <a key={url} className="btn btn--primary movie-bit-button" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${photo.movieLabel} — video ${index + (photo.movieStartNumber || 1)}`}>{photo.movieLabel}</a>
-                      ))}
-                    </figcaption>
-                  )}
+
                 </figure>
               ))}
             </div>
@@ -239,9 +226,7 @@ function Welcome() {
             </a>
           ))}
         </div>
-        <div className="hero__actions">
-          <a className="btn btn--primary" href={teamAdvisor.movieUrl} target="_blank" rel="noopener noreferrer">{teamAdvisor.movieLabel}</a>
-        </div>
+
       </section>
     </Section>
   )
