@@ -86,17 +86,30 @@ function Placeholder({ ratio, label, hint }) {
 
 function WelcomeVideo() {
   const { src, poster, captions, label, embedUrl, externalLabel } = welcome.video
+  const [showingEmbed, setShowingEmbed] = useState(false)
 
   if (embedUrl) {
     return (
       <div>
-        <iframe
-          className="welcome__video welcome__embed"
-          src={embedUrl}
-          title={label}
-          allow="autoplay; fullscreen"
-          allowFullScreen
-        />
+        {poster && !showingEmbed ? (
+          <button
+            className="welcome__video-poster"
+            type="button"
+            aria-label="Play Dr. Estin’s welcome video"
+            onClick={() => setShowingEmbed(true)}
+          >
+            <img src={poster} alt="" />
+            <span aria-hidden="true">Play video</span>
+          </button>
+        ) : (
+          <iframe
+            className="welcome__video welcome__embed"
+            src={embedUrl}
+            title={label}
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+        )}
         <p>
           <a href={embedUrl} target="_blank" rel="noopener noreferrer">
             {externalLabel}
@@ -210,7 +223,6 @@ function Welcome() {
       <section className="team-advisor" aria-labelledby="team-advisor-heading">
         <h2 id="team-advisor-heading">{teamAdvisor.heading}</h2>
         <p>{teamAdvisor.body}</p>
-        <h3 className="team-advisor__subheading">Onward, into the future for Maui and healthcare</h3>
         <div className="team-gallery">
           {teamAdvisor.photos.map((photo) => (
             <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
@@ -219,6 +231,7 @@ function Welcome() {
           ))}
         </div>
       </section>
+      <h3 className="team-advisor__subheading">Onward into the future for Healthcare on Maui</h3>
       <div className="welcome__letter">
         {welcome.nextGenerationCopy.map((text, i) => <p key={i}>{text}</p>)}
       </div>
@@ -270,7 +283,6 @@ function ScholarshipFeature() {
         <p>{scholarship.lede}</p>
         <div className="hero__actions">
           <a className="btn btn--primary" href="/scholarship">{site.coastal.scholarshipDetails}</a>
-          <a className="btn btn--ghost" href={scholarship.donationUrl} target="_blank" rel="noopener noreferrer">{scholarship.giveLabel}</a>
         </div>
       </div>
     </section>

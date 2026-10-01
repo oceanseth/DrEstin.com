@@ -6,8 +6,8 @@
 
 export const site = {
   heroPortrait: {
-    src: '/media/dr-estin-hero-portrait.jpeg',
-    alt: 'Portrait of Dr. Norm Estin wearing glasses, a white San Jose Sharks cap, and a turquoise patterned shirt.',
+    src: '/media/clinic-portrait.jpg',
+    alt: 'Dr. Norm Estin smiling in a light-colored cap and navy polo in front of the Doctors On Call clinic.',
   },
   coastal: {
     greeting: 'Aloha.',
@@ -41,7 +41,7 @@ export const welcome = {
     embedUrl: 'https://masky.ai/live/c-26-09-ybmr',
     externalLabel: 'Open Dr. Estin’s welcome on Masky',
     src: null, // TODO: '/media/welcome.mp4'
-    poster: null, // TODO: '/media/welcome-poster.jpg'
+    poster: '/media/dr-estin-hero-portrait.jpeg',
     captions: null, // TODO: '/media/welcome.vtt' - captions, not optional for a public site
     label: 'Dr. Estin welcomes you',
     // The letter below doubles as the transcript, so the video is never the only path to
