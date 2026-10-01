@@ -210,6 +210,7 @@ function Welcome() {
       <section className="team-advisor" aria-labelledby="team-advisor-heading">
         <h2 id="team-advisor-heading">{teamAdvisor.heading}</h2>
         <p>{teamAdvisor.body}</p>
+        <h3 className="team-advisor__subheading">Onward, into the future for Maui and healthcare</h3>
         <div className="team-gallery">
           {teamAdvisor.photos.map((photo) => (
             <a key={photo.src} href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full photo: ${photo.alt}`}>
