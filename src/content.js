@@ -423,26 +423,6 @@ export const teamAdvisor = {
       "alt": "Football players in red helmets watching a nighttime game from the sideline."
     },
     {
-      "src": "/media/lahainaluna/team-03.jpeg",
-      "alt": "Spectators filling the stadium stands beneath the press box."
-    },
-    {
-      "src": "/media/lahainaluna/team-05.jpeg",
-      "alt": "Lahainaluna players in red uniforms facing the crowded grandstand."
-    },
-    {
-      "src": "/media/lahainaluna/team-06.jpeg",
-      "alt": "Two supporters wearing red shirts smiling together at a nighttime game."
-    },
-    {
-      "src": "/media/lahainaluna/team-07.jpeg",
-      "alt": "A group posing with certificates in front of a Lahainaluna backdrop."
-    },
-    {
-      "src": "/media/lahainaluna/team-08.jpeg",
-      "alt": "A photographer beside the football field with mountains in the background."
-    },
-    {
       "src": "/media/lahainaluna/team-09.jpeg",
       "alt": "An illuminated scoreboard displaying Lunas Strong at night."
     },
@@ -455,76 +435,20 @@ export const teamAdvisor = {
       "alt": "Two masked supporters making shaka gestures beside Lahainaluna football players at sunset."
     },
     {
-      "src": "/media/lahainaluna/team-13.jpeg",
-      "alt": "Lahainaluna football players in red uniforms gathered around a large trophy."
-    },
-    {
-      "src": "/media/lahainaluna/team-14.jpeg",
-      "alt": "Two men in red shirts smiling in stadium seating overlooking a football field and running track."
-    },
-    {
-      "src": "/media/lahainaluna/team-15.jpeg",
-      "alt": "A referee watching football players in red and white uniforms line up for a play, with spectators in the stands."
-    },
-    {
       "src": "/media/lahainaluna/team-16.jpeg",
       "alt": "People gathered on the Lahainaluna football field around floral tributes and a portrait, with the ocean and mountains behind them."
-    },
-    {
-      "src": "/media/lahainaluna/team-17.jpeg",
-      "alt": "Lahainaluna football players in red uniforms lining up against an opposing team during a nighttime game."
-    },
-    {
-      "src": "/media/lahainaluna/team-18.jpeg",
-      "alt": "Lahainaluna players standing together on the sideline at dusk, with helmets lined up beside a photographer."
     },
     {
       "src": "/media/lahainaluna/team-19.jpeg",
       "alt": "Four supporters and sports medicine staff posing beside a football field in front of crowded stadium stands."
     },
     {
-      "src": "/media/lahainaluna/team-20.jpeg",
-      "alt": "A man in a red cap and polo making a shaka gesture beside a Sue\u2019s Boys sign at a nighttime football game."
-    },
-    {
-      "src": "/media/lahainaluna/team-21.jpeg",
-      "alt": "Spectators overlooking the Lahainaluna football field and illuminated scoreboard at night."
-    },
-    {
-      "src": "/media/lahainaluna/team-22.jpeg",
-      "alt": "Lahainaluna supporters smiling together in orange stadium seats, with a man making a shaka gesture in the foreground."
-    },
-    {
-      "src": "/media/lahainaluna/team-23.jpeg",
-      "alt": "Lunas cheerleaders in red and white uniforms standing beside the field, with pom-poms and supporters behind them."
-    },
-    {
-      "src": "/media/lahainaluna/team-24.jpeg",
-      "alt": "Three sports medicine staff holding a Doctors On Call sign on a football stadium sideline."
-    },
-    {
       "src": "/media/lahainaluna/team-25.jpeg",
       "alt": "Lahainaluna supporters in stadium seats holding handmade signs and making shaka gestures."
     },
     {
-      "src": "/media/lahainaluna/team-26.jpeg",
-      "alt": "Three smiling Lahainaluna supporters seated in stadium bleachers at night, with a man making a shaka gesture in the foreground."
-    },
-    {
-      "src": "/media/lahainaluna/team-27.jpeg",
-      "alt": "A man and Lahainaluna football players making shaka gestures on the sideline in Honolulu."
-    },
-    {
       "src": "/media/lahainaluna/team-28.jpeg",
       "alt": "Three Lahainaluna staff members posing together on the football field in Honolulu."
-    },
-    {
-      "src": "/media/lahainaluna/team-29.jpeg",
-      "alt": "Lahainaluna players and staff on the sideline beneath the stadium scoreboard in Honolulu."
-    },
-    {
-      "src": "/media/lahainaluna/team-30.jpeg",
-      "alt": "Lahainaluna football players gathered around a championship trophy as photographers capture the celebration."
     }
   ]
 }
