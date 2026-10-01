@@ -317,7 +317,7 @@ export const work = {
       title: 'Event & Sports Medicine',
       photo: {
         src: '/media/tournaments/ncaa-courtside-medical-team.jpeg',
-        alt: 'Five Doctors On Call medical team members holding their sign on the basketball court at the Maui Invitational.',
+        alt: 'Dr. Estin and a colleague in red polos holding a Doctors On Call banner at a basketball tournament.',
       },
       body:
         'Medical director of the Kapalua Golf Tournaments for the PGA and the Maui Invitational ' +
