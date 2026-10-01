@@ -185,8 +185,8 @@ export const work = {
     {
       title: 'Event & Sports Medicine',
       photo: {
-        src: '/media/tournaments/ncaa-courtside-medical-team.jpeg',
-        alt: 'Dr. Estin and a colleague in red polos holding a Doctors On Call banner at a basketball tournament.',
+        src: '/media/tournaments/event-sports-medicine-doctors-on-call.jpeg',
+        alt: 'Dr. Estin and a colleague in red polos holding a Doctors On Call banner courtside at the Maui Invitational.',
       },
       body:
         'Medical director of the Kapalua Golf Tournaments for the PGA and the Maui Invitational ' +
@@ -333,20 +333,12 @@ export const tournament = {
       "heading": "NCAA Maui Invitational Basketball",
       "photos": [
         {
-          "src": "/media/tournaments/tournament-04.jpeg",
-          "alt": "Dr. Estin and a colleague holding a Doctors On Call sign courtside at the Maui Invitational."
-        },
-        {
           "src": "/media/tournaments/tournament-08.jpeg",
           "alt": "Five Doctors On Call team members in red shirts holding a sign beside a basketball court."
         },
         {
           "src": "/media/tournaments/tournament-09.jpeg",
           "alt": "The Doctors On Call medical team with their sign at a basketball tournament."
-        },
-        {
-          "src": "/media/tournaments/tournament-13.jpeg",
-          "alt": "Two Doctors On Call team members with their sign courtside at the 2016 Maui Invitational."
         },
         {
           "src": "/media/tournaments/tournament-16.jpeg",
@@ -363,10 +355,6 @@ export const tournament = {
         {
           "src": "/media/tournaments/tournament-36.jpeg",
           "alt": "Two men smiling and making hand gestures beside the courtside broadcast table as basketball players warm up."
-        },
-        {
-          "src": "/media/tournaments/tournament-40.jpeg",
-          "alt": "Four medical team members in red polos standing in front of a Maui Invitational banner."
         },
       ]
     },
