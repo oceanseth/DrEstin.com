@@ -297,11 +297,6 @@ export const welcome = {
     },
   ],
 
-  stats: [
-    { value: '40', label: 'Years practicing on Maui' },
-    { value: 'PGA · NCAA', label: 'Tournament medical director' },
-    { value: 'Olympics', label: 'NBC Games physician' },
-  ],
 }
 
 export const work = {

@@ -188,17 +188,6 @@ function Welcome() {
       </div>
       </details>
 
-      <div className="stats-section">
-      <dl className="stats stats--row">
-        {welcome.stats.map((stat) => (
-          <div key={stat.label}>
-            <dt className="stat__value">{stat.value}</dt>
-            <dd className="stat__label">{stat.label}</dd>
-          </div>
-        ))}
-      </dl>
-      
-      </div>
       <section className="team-advisor" aria-labelledby="tournament-heading">
         <h2 id="tournament-heading">{tournament.heading}</h2>
         <p>{tournament.body}</p>
