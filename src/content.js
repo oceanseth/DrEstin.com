@@ -18,7 +18,7 @@ export const site = {
     anotherClipUrl: 'https://youtu.be/-i8MHAWJdm8',
     olympicsMovieUrl: 'https://www.youtube.com/watch?v=GE12zeIyPx0',
     storyHeading: 'A life in medicine. A home on Maui.',
-    letterAction: 'Read my full welcome letter',
+    letterAction: 'Where we are',
     nextGeneration: 'The next generation',
     scholarshipDetails: 'Explore the scholarship',
   },

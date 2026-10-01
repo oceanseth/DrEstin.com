@@ -28,7 +28,6 @@
 .welcome__embed { aspect-ratio: 16/9; }
 .welcome__media p { margin-top: .8rem; font-size: .9rem; }
 .welcome__full { margin-top: 2rem; }
-.welcome__full summary { color: var(--accent); cursor: pointer; font-weight: bold; padding-block: 1rem; }
 .welcome__letter { display: grid; gap: 1.4rem; margin-top: 1.5rem; font-size: 1.1rem; }
 .welcome__letter > p { max-width: var(--measure); }
 .photo { margin: 1rem 0; max-width: 48rem; }

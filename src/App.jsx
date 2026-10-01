@@ -179,8 +179,8 @@ function Welcome() {
       </div>
       <Community />
       <Work />
-      <details className="welcome__full">
-      <summary>{site.coastal.letterAction}</summary>
+      <section className="welcome__full" aria-labelledby="welcome-full-heading">
+      <h2 className="section__head" id="welcome-full-heading">{site.coastal.letterAction}</h2>
       <div className="welcome__letter">
         {WELCOME_BLOCKS.slice(2).map((block, i) =>
           block.type === 'photo' ? (
@@ -199,7 +199,7 @@ function Welcome() {
           ),
         )}
       </div>
-      </details>
+      </section>
 
       <section className="team-advisor" aria-labelledby="tournament-heading">
         <h2 id="tournament-heading">{tournament.heading}</h2>
