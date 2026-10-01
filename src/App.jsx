@@ -165,6 +165,7 @@ function Welcome() {
       </div>
       </div>
       <Community />
+      <Work />
       <details className="welcome__full">
       <summary>{site.coastal.letterAction}</summary>
       <div className="welcome__letter">
@@ -411,7 +412,6 @@ export default function App() {
         {IS_SCHOLARSHIP ? <Scholarship /> : <>
         <Hero />
         <Welcome />
-        <Work />
         <ScholarshipFeature />
         <Links />
         <Contact />
