@@ -96,36 +96,16 @@ export const welcome = {
   "label": "COVID-19 community response photographs",
   "photos": [
     {
-      "src": "/media/covid/covid-01.jpeg",
-      "alt": "Healthcare workers in protective gowns, masks, and face shields coordinating outdoors beside a supply table."
-    },
-    {
       "src": "/media/covid/covid-02.jpeg",
       "alt": "A healthcare worker wearing glasses, a surgical mask, a face shield, and a protective gown."
-    },
-    {
-      "src": "/media/covid/covid-03.jpeg",
-      "alt": "A hand holding a white coronavirus-shaped model labeled Doctors On Call."
     },
     {
       "src": "/media/covid/covid-04.jpeg",
       "alt": "A masked man in a red polo at an outdoor gathering of medical staff and uniformed personnel."
     },
     {
-      "src": "/media/covid/covid-05.jpeg",
-      "alt": "Gloved healthcare workers preparing testing supplies on a table."
-    },
-    {
       "src": "/media/covid/covid-06.jpeg",
       "alt": "Masked staff working at a Doctors On Call testing station."
-    },
-    {
-      "src": "/media/covid/covid-07.jpeg",
-      "alt": "A sign reading Urgent Care and COVID Testing Center."
-    },
-    {
-      "src": "/media/covid/covid-08.jpeg",
-      "alt": "Three diagnostic testing instruments arranged beside swabs, sample tubes, and a sharps container."
     },
     {
       "src": "/media/covid/covid-09.jpeg",
@@ -140,24 +120,8 @@ export const welcome = {
       "alt": "Three masked men, including a uniformed medical worker with a stethoscope, posing at an outdoor response site."
     },
     {
-      "src": "/media/covid/covid-12.jpeg",
-      "alt": "Four diagnostic testing instruments arranged on a clinic counter."
-    },
-    {
-      "src": "/media/covid/covid-13.jpeg",
-      "alt": "Two masked men, one wearing a military uniform and stethoscope, making shaka gestures."
-    },
-    {
-      "src": "/media/covid/covid-14.jpeg",
-      "alt": "A masked man in a navy polo beside a Doctors On Call van outside the urgent care clinic."
-    },
-    {
       "src": "/media/covid/covid-15.jpeg",
       "alt": "A masked man in a teal polo in front of the Doctors On Call clinic and branded van."
-    },
-    {
-      "src": "/media/covid/covid-16.jpeg",
-      "alt": "Laboratory instruments and supplies on a clinic countertop beside a sink."
     },
     {
       "src": "/media/covid/covid-17.jpeg",
