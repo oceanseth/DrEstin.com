@@ -278,23 +278,17 @@ export const welcome = {
         'Those days reinforced something I had learned over four decades here: on Maui, you ' +
         'don’t simply practice medicine in a community—you become part of it.',
     },
-    {
-      type: 'p',
-      text:
-        'At this point in my career, I’m also looking toward the next generation. Much of my ' +
-        'work now will focus on establishing and developing healthcare education and training ' +
-        'opportunities for Maui students, particularly at Lahainaluna High School, a school and ' +
-        'community I’ve been involved with for many years, especially as a Team Physician and ' +
-        'Advisor.',
-    },
-    {
-      type: 'p',
-      text:
-        'I’ll be working with a mentorship program that connects young people with ' +
-        'opportunities in healthcare. I’ve also begun a personal healthcare scholarship program ' +
-        'to encourage Maui students to pursue careers in medicine, nursing, and the many other ' +
-        'healthcare professions our community needs.',
-    },
+  ],
+  nextGenerationCopy: [
+    'At this point in my career, I’m also looking toward the next generation. Much of my ' +
+      'work now will focus on establishing and developing healthcare education and training ' +
+      'opportunities for Maui students, particularly at Lahainaluna High School, a school and ' +
+      'community I’ve been involved with for many years, especially as a Team Physician and ' +
+      'Advisor.',
+    'I’ll be working with a mentorship program that connects young people with ' +
+      'opportunities in healthcare. I’ve also begun a personal healthcare scholarship program ' +
+      'to encourage Maui students to pursue careers in medicine, nursing, and the many other ' +
+      'healthcare professions our community needs.',
   ],
 
 }
@@ -434,16 +428,8 @@ export const teamAdvisor = {
       "alt": "People gathered on the Lahainaluna football field around floral tributes and a portrait, with the ocean and mountains behind them."
     },
     {
-      "src": "/media/lahainaluna/team-19.jpeg",
-      "alt": "Four supporters and sports medicine staff posing beside a football field in front of crowded stadium stands."
-    },
-    {
       "src": "/media/lahainaluna/team-25.jpeg",
       "alt": "Lahainaluna supporters in stadium seats holding handmade signs and making shaka gestures."
-    },
-    {
-      "src": "/media/lahainaluna/team-28.jpeg",
-      "alt": "Three Lahainaluna staff members posing together on the football field in Honolulu."
     }
   ]
 }
@@ -530,12 +516,20 @@ export const tournament = {
           "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
         },
         {
-          "src": "/media/tournaments/tournament-11.jpeg",
-          "alt": "A group posing with a Doctors On Call sign at an outdoor golf event."
-        },
-        {
           "src": "/media/tournaments/tournament-14.jpeg",
           "alt": "A medical team member between two Doctors On Call golf carts at a golf event, with spectators and the ocean behind him."
+        },
+        {
+          "src": "/media/tournaments/golf-course-conversation.jpeg",
+          "alt": "Two men in golf attire leaning toward each other at an outdoor golf event."
+        },
+        {
+          "src": "/media/tournaments/tournament-11.jpeg",
+          "alt": "A group of golfers posing with a Doctors On Call sign at an outdoor golf event."
+        },
+        {
+          "src": "/media/tournaments/golf-course-group.jpeg",
+          "alt": "Dr. Estin standing with another man at an outdoor golf event, with spectators behind them."
         }
       ]
     },

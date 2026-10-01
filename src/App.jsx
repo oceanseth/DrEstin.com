@@ -217,8 +217,10 @@ function Welcome() {
             </a>
           ))}
         </div>
-
       </section>
+      <div className="welcome__letter">
+        {welcome.nextGenerationCopy.map((text, i) => <p key={i}>{text}</p>)}
+      </div>
     </Section>
   )
 }
