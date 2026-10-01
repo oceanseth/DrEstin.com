@@ -633,68 +633,20 @@ export const tournament = {
           "alt": "Two women wearing leis hold a Doctors On Call sign at the XTERRA World Championship finish line."
         },
         {
-          "src": "/media/tournaments/tournament-03.jpeg",
-          "alt": "Dr. Estin holding a Doctors On Call sign beneath the XTERRA World Championship arch."
-        },
-        {
-          "src": "/media/tournaments/tournament-06.jpeg",
-          "alt": "Dr. Estin and a colleague making shaka gestures at a beach surfing event."
-        },
-        {
           "src": "/media/tournaments/tournament-07.jpeg",
           "alt": "Participants, event tents, picnic tables, and colorful surfboards on the beach."
-        },
-        {
-          "src": "/media/tournaments/tournament-21.jpeg",
-          "alt": "A man holding a Doctors On Call sign in the stands overlooking a tennis court."
         },
         {
           "src": "/media/tournaments/tournament-23.jpeg",
           "alt": "USA and Germany tennis team members wearing leis and posing with performers beside a Fed Cup sign overlooking the ocean."
         },
         {
-          "src": "/media/tournaments/tournament-24.jpeg",
-          "alt": "A man in a red polo and a USA Fed Cup team member wearing a lei making shaka gestures by the ocean."
-        },
-        {
-          "src": "/media/tournaments/tournament-25.jpeg",
-          "alt": "A hand holding a 2017 USA versus Germany Fed Cup event badge with a portrait and USTA Events label."
-        },
-        {
           "src": "/media/tournaments/tournament-26.jpeg",
           "alt": "Tennis players and a camera crew on a Fed Cup court with an American flag and spectators in the stands."
         },
         {
-          "src": "/media/tournaments/tournament-27.jpeg",
-          "alt": "A hand holding a 2017 Doctors On Call medical credential with a portrait of Dr. Estin."
-        },
-        {
-          "src": "/media/tournaments/tournament-28.jpeg",
-          "alt": "A Maui Jim event tent with a Doctors On Call sign on the beach beside a paddleboard and participants."
-        },
-        {
-          "src": "/media/tournaments/tournament-29.jpeg",
-          "alt": "People and event supplies beneath beachside tents, with a cooler bearing a Doctors On Call sign."
-        },
-        {
-          "src": "/media/tournaments/tournament-30.jpeg",
-          "alt": "A group standing in shallow ocean water with colorful surfboards during a beach event."
-        },
-        {
-          "src": "/media/tournaments/tournament-31.jpeg",
-          "alt": "A person seated facing the ocean in a red Doctors On Call chair on the beach."
-        },
-        {
           "src": "/media/tournaments/tournament-32.jpeg",
           "alt": "A man in a red polo holding a Doctors On Call sign on the beach in front of athletes wearing swimming caps."
-        },
-        {
-          "src": "/media/tournaments/tournament-33.jpeg",
-          "alt": "A man holding a Doctors On Call sign at the water\u2019s edge while athletes gather along the beach."
-        },
-        {
-          "src": "/media/tournaments/tournament-39.jpeg",
-          "alt": "A clear medical supply bin on a Doctors On Call cooler beneath a beachside event tent, with staff and the ocean behind it."
         }
       ]
     }
