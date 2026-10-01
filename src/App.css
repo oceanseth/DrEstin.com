@@ -24,9 +24,8 @@
 .welcome__overview { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; }
 .welcome__summary { display: grid; align-content: start; gap: 1.3rem; }
 .welcome__lede { font-size: 1.35rem; }
-.welcome__video { width: 100%; border: 1px solid var(--border); border-radius: 1.1rem; display: block; background: #fff; }
-.welcome__embed { aspect-ratio: 16/9; }
-.welcome__media p { margin-top: .8rem; font-size: .9rem; }
+.welcome__portrait { margin: 0; }
+.welcome__portrait img { display: block; width: 100%; height: auto; border-radius: 1.1rem; }
 .welcome__full { margin-top: 2rem; }
 .welcome__letter { display: grid; gap: 1.4rem; margin-top: 1.5rem; font-size: 1.1rem; }
 .welcome__letter > p { max-width: var(--measure); }
@@ -72,16 +71,14 @@ a.linklist__row:hover { text-decoration: underline; }
 .team-advisor > p { max-width: var(--measure); margin-bottom: 2rem; }
 .team-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.3rem; align-items: start; }
 .team-gallery a { display: block; background: var(--surface); border-radius: 1rem; overflow: hidden; }
-.welcome__video-poster { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 1.1rem; background: var(--surface); cursor: pointer; }
-.welcome__video-poster img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.welcome__video-poster span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: .8rem 1.3rem; border-radius: 2rem; background: rgb(0 0 0 / 68%); color: #fff; font-weight: bold; }
 .team-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 @media (max-width: 47.5rem) { .team-gallery { grid-template-columns: 1fr; } }
 
 .welcome-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; align-items: start; }
+.welcome-gallery#covid-photos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .welcome-gallery a { display: block; border-radius: 1rem; overflow: hidden; background: var(--surface); }
 .welcome-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
-@media (max-width: 47.5rem) { .welcome-gallery { grid-template-columns: 1fr; } }
+@media (max-width: 47.5rem) { .welcome-gallery, .welcome-gallery#covid-photos { grid-template-columns: 1fr; } }
 
 .tournament-group { margin-top: 2.5rem; }
 .tournament-group h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 1.4rem; }

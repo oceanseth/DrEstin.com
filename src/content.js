@@ -35,17 +35,11 @@ export const welcome = {
   heading: 'Welcome',
   lede: 'Aloha! I’m Dr. Norm Estin.',
 
-  // Drop the file in public/media/ and put its path here. See public/media/README.md for
-  // specs. While src is null the page renders a labelled placeholder instead of the player.
   video: {
-    embedUrl: 'https://masky.ai/live/c-26-09-ybmr',
-    externalLabel: 'Open Dr. Estin’s welcome on Masky',
-    src: null, // TODO: '/media/welcome.mp4'
+    src: null,
     poster: '/media/dr-estin-hero-portrait.jpeg',
-    captions: null, // TODO: '/media/welcome.vtt' - captions, not optional for a public site
-    label: 'Dr. Estin welcomes you',
-    // The letter below doubles as the transcript, so the video is never the only path to
-    // this content.
+    posterAlt: 'Dr. Estin smiling in glasses, a white baseball cap, and a light blue shirt.',
+    captions: null,
   },
 
   // Ordered blocks: 'p' is a paragraph, 'photo' drops an image into the flow.
@@ -91,14 +85,14 @@ export const welcome = {
     {
       type: 'p',
       text:
-        'COVID-19 came first. I worked alongside private and state medical organizations to ' +
+        'COVID-19 came first. We worked alongside private and state medical organizations to ' +
         'test, vaccinate, distribute vaccines, and care for those who became ill.',
     },
     {
-  "type": "gallery",
-  "id": "covid-photos",
-  "label": "COVID-19 community response photographs",
-  "photos": [
+      type: 'gallery',
+      id: 'covid-photos',
+      label: 'COVID-19 community response photographs',
+      photos: [
     {
       "src": "/media/covid/covid-02.jpeg",
       "alt": "A healthcare worker wearing glasses, a surgical mask, a face shield, and a protective gown."
@@ -112,85 +106,17 @@ export const welcome = {
       "alt": "Masked staff working at a Doctors On Call testing station."
     },
     {
-      "src": "/media/covid/covid-09.jpeg",
-      "alt": "Two healthcare workers in masks, face shields, and protective clothing outside Doctors On Call."
-    },
-    {
-      "src": "/media/covid/covid-10.jpeg",
-      "alt": "Masked and gloved staff using laptops at an outdoor Doctors On Call station."
-    },
-    {
       "src": "/media/covid/covid-11.jpeg",
       "alt": "Three masked men, including a uniformed medical worker with a stethoscope, posing at an outdoor response site."
-    },
-    {
-      "src": "/media/covid/covid-15.jpeg",
-      "alt": "A masked man in a teal polo in front of the Doctors On Call clinic and branded van."
-    },
-    {
-      "src": "/media/covid/covid-17.jpeg",
-      "alt": "An empty sandy beach beside palm trees and an oceanfront resort."
-    },
-    {
-      "src": "/media/covid/covid-18.jpeg",
-      "alt": "A quiet beach with calm ocean water, palm trees, and hotels beneath a cloudy blue sky."
-    },
-    {
-      "src": "/media/covid/covid-19.jpeg",
-      "alt": "Dr. Estin wearing a surgical mask and blue glove while making a shaka gesture outdoors."
-    },
-    {
-      "src": "/media/covid/covid-20.jpeg",
-      "alt": "Aerial view of beachfront hotels, golf courses, and sailboats along the Maui coastline."
-    },
-    {
-      "src": "/media/covid/covid-21.jpeg",
-      "alt": "An empty beach with palm-tree shadows and turquoise ocean water."
-    },
-    {
-      "src": "/media/covid/covid-22.png",
-      "alt": "A worker in protective clothing organizing paperwork in clear bins; paperwork details obscured for privacy."
     },
     {
       "src": "/media/covid/covid-23.jpeg",
       "alt": "A quiet waterfront street in Lahaina with storefronts and an oceanfront walkway."
     },
     {
-      "src": "/media/covid/covid-24.jpeg",
-      "alt": "Aerial view of a large field filled with tightly packed rows of parked cars."
-    },
-    {
       "src": "/media/covid/covid-25.jpeg",
       "alt": "A broad empty beach curving past oceanfront hotels, with sailboats offshore."
     },
-    {
-      "src": "/media/covid/covid-26.jpeg",
-      "alt": "A humorous Passport Stamps in 2020 graphic featuring rooms at home, Facebook, and Zoom meetings."
-    },
-    {
-      "src": "/media/covid/covid-27.png",
-      "alt": "Gloved hands preparing testing supplies beside analyzers and timers; paperwork details obscured for privacy."
-    },
-    {
-      "src": "/media/covid/covid-28.jpeg",
-      "alt": "Blue-gloved hands typing on a tablet keyboard beside Doctors On Call paperwork and disinfectant."
-    },
-    {
-      "src": "/media/covid/covid-29.jpeg",
-      "alt": "A newspaper clipping titled Covid Positivity Rate Is Useful but Flawed, with highlighted passages."
-    },
-    {
-      "src": "/media/covid/covid-30.jpeg",
-      "alt": "Masked people and clinic staff outside the open entrance to Doctors On Call."
-    },
-    {
-      "src": "/media/covid/covid-31.jpeg",
-      "alt": "Five white testing instruments arranged on a counter with boxes of medical supplies."
-    },
-    {
-      "src": "/media/covid/covid-32.jpeg",
-      "alt": "A humorous cartoon of an imaginary at-home COVID and everything test."
-    }
   ]
 },
     {
@@ -203,43 +129,24 @@ export const welcome = {
         'help for us and the entire West Maui community in recovering from the fire.',
     },
     {
-  "type": "gallery",
-  "id": "wildfire-photos",
-  "label": "Maui wildfire response photographs and images",
+      type: 'gallery',
+      id: 'wildfire-photos',
+      label: 'Maui wildfire response photographs and images',
   "photos": [
-    {
-      "src": "/media/wildfires/community-recovery-outdoors.jpeg",
-      "alt": "Two people smiling outdoors, one wearing a navy Doctors On Call polo and making a shaka gesture, with mountains and a faint rainbow behind them."
-    },
     {
       "src": "/media/wildfires/lahaina-fire-aftermath-ocean.jpeg",
       "alt": "Fire-damaged buildings and trees in Lahaina, with a tall smokestack still standing and boats on the ocean beyond."
     },
     {
-      "src": "/media/wildfires/wildfire-01.jpeg",
-      "alt": "A man photographing a burned vehicle amid wildfire debris."
+      "src": "/media/wildfires/community-recovery-outdoors.jpeg",
+      "alt": "Dr. Estin with Representative Jill Tokuda outdoors, with mountains and a faint rainbow behind them."
     },
     {
       "src": "/media/wildfires/wildfire-02.jpeg",
       "alt": "A news image of a man walking through wildfire destruction in Lahaina, with the original news caption."
-    },
-    {
-      "src": "/media/wildfires/wildfire-04.jpeg",
-      "alt": "A map screenshot showing the Lahaina wildfire burn area in yellow and healthcare locations marked by category."
-    },
-    {
-      "src": "/media/wildfires/wildfire-05.jpeg",
-      "alt": "A UHERO report screenshot titled After the Maui wildfires: The road ahead."
     }
   ]
 },
-    {
-      type: 'photo',
-      src: '/media/clinic-portrait.jpg',
-      alt: 'Dr. Norm Estin standing outside the Doctors On Call urgent care and testing center.',
-      caption: '',
-      width: 'wide',
-    },
     {
       type: 'p',
       text:
@@ -461,14 +368,6 @@ export const tournament = {
           "src": "/media/tournaments/tournament-40.jpeg",
           "alt": "Four medical team members in red polos standing in front of a Maui Invitational banner."
         },
-        {
-          "src": "/media/tournaments/tournament-44.jpeg",
-          "movieStartNumber": 4,
-          "movieUrls": ["https://youtu.be/jWau06EsfRY"],
-          "movieLabel": "Click here for a classic doctor bit",
-          "moviePlacement": "side",
-          "alt": "A broadcaster wearing a headset and leis, holding a bowl of pineapple beside the basketball court."
-        }
       ]
     },
     {

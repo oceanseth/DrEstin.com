@@ -84,65 +84,12 @@ function Placeholder({ ratio, label, hint }) {
   )
 }
 
-function WelcomeVideo() {
-  const { src, poster, captions, label, embedUrl, externalLabel } = welcome.video
-  const [showingEmbed, setShowingEmbed] = useState(false)
-
-  if (embedUrl) {
-    return (
-      <div>
-        {poster && !showingEmbed ? (
-          <button
-            className="welcome__video-poster"
-            type="button"
-            aria-label="Play Dr. Estin’s welcome video"
-            onClick={() => setShowingEmbed(true)}
-          >
-            <img src={poster} alt="" />
-            <span aria-hidden="true">Play video</span>
-          </button>
-        ) : (
-          <iframe
-            className="welcome__video welcome__embed"
-            src={embedUrl}
-            title={label}
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          />
-        )}
-        <p>
-          <a href={embedUrl} target="_blank" rel="noopener noreferrer">
-            {externalLabel}
-          </a>
-        </p>
-      </div>
-    )
-  }
-
-  if (!src) {
-    return (
-      <Placeholder
-        ratio="16 / 9"
-        label={label}
-        hint="Drop the file at public/media/welcome.mp4, then set video.src in src/content.js"
-      />
-    )
-  }
-
+function WelcomePortrait() {
+  const { poster, posterAlt } = welcome.video
   return (
-    <video
-      className="welcome__video"
-      controls
-      playsInline
-      preload="metadata"
-      poster={poster ?? undefined}
-      aria-label={label}
-    >
-      <source src={src} type="video/mp4" />
-      {captions && (
-        <track kind="captions" src={captions} srcLang="en" label="English" default />
-      )}
-    </video>
+    <figure className="welcome__portrait">
+      <img src={poster} alt={posterAlt} />
+    </figure>
   )
 }
 
@@ -174,7 +121,7 @@ function Welcome() {
         {WELCOME_BLOCKS.slice(0, 2).map((block, i) => <p key={i}>{block.text}</p>)}
       </div>
       <div className="welcome__media">
-        <WelcomeVideo />
+        <WelcomePortrait />
       </div>
       </div>
       <Community />
