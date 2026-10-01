@@ -611,32 +611,12 @@ export const tournament = {
           "alt": "Dr. Estin holding a Doctors On Call sign at a Kapalua golf course overlooking the ocean."
         },
         {
-          "src": "/media/tournaments/tournament-10.jpeg",
-          "alt": "A man holding a Doctors On Call sign on a golf course with spectators and the ocean in the background."
-        },
-        {
           "src": "/media/tournaments/tournament-11.jpeg",
           "alt": "A group posing with a Doctors On Call sign at an outdoor golf event."
         },
         {
           "src": "/media/tournaments/tournament-14.jpeg",
           "alt": "A medical team member between two Doctors On Call golf carts at a golf event, with spectators and the ocean behind him."
-        },
-        {
-          "src": "/media/tournaments/tournament-15.jpeg",
-          "alt": "A man beside a decorated Doctors On Call golf cart near the beach."
-        },
-        {
-          "src": "/media/tournaments/tournament-22.jpeg",
-          "alt": "A group posing on a golf course around a golfer holding a trophy and wearing a lei."
-        },
-        {
-          "src": "/media/tournaments/tournament-38.jpeg",
-          "alt": "A man in a red polo holding a Doctors On Call sign on a golf course overlooking the ocean and a mountainous island."
-        },
-        {
-          "src": "/media/tournaments/tournament-45.jpeg",
-          "alt": "Two people making shaka gestures in a medical golf cart at the Sentry Tournament of Champions in Kapalua."
         }
       ]
     },
