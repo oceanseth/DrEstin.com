@@ -48,7 +48,7 @@ function Nav() {
 }
 
 function Hero() {
-  const portrait = welcome.blocks.find((block) => block.src === '/media/clinic-portrait.jpg')
+  const portrait = site.heroPortrait
   return (
     <section className="hero hero--coastal shell" id="top">
       <div className="hero__copy">

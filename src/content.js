@@ -5,6 +5,10 @@
 // listing or a news write-up, the letter wins.
 
 export const site = {
+  heroPortrait: {
+    src: '/media/dr-estin-hero-portrait.jpeg',
+    alt: 'Portrait of Dr. Norm Estin wearing glasses, a white San Jose Sharks cap, and a turquoise patterned shirt.',
+  },
   coastal: {
     greeting: 'Aloha.',
     introduction: 'I’m Dr. Norm Estin.',
