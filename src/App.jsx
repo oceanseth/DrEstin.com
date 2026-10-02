@@ -85,7 +85,27 @@ function Placeholder({ ratio, label, hint }) {
 }
 
 function WelcomePortrait() {
-  const { poster, posterAlt } = welcome.video
+  const { poster, posterAlt, embedUrl, externalLabel } = welcome.video
+
+  if (embedUrl) {
+    return (
+      <figure className="welcome__portrait">
+        <iframe
+          className="welcome__embed"
+          src={embedUrl}
+          title="Dr. Estin’s video welcome"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        />
+        <figcaption>
+          <a href={embedUrl} target="_blank" rel="noopener noreferrer">
+            {externalLabel}
+          </a>
+        </figcaption>
+      </figure>
+    )
+  }
+
   return (
     <figure className="welcome__portrait">
       <img src={poster} alt={posterAlt} />

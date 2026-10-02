@@ -26,6 +26,10 @@
 .welcome__lede { font-size: 1.35rem; }
 .welcome__portrait { margin: 0; }
 .welcome__portrait img { display: block; width: 100%; height: auto; border-radius: 1.1rem; }
+/* The hero portrait is 2:3; the live player renders the same image, so matching the
+   ratio keeps the embed the exact footprint the photo had. */
+.welcome__embed { display: block; width: 100%; aspect-ratio: 2 / 3; border: 0; border-radius: 1.1rem; background: var(--bg); }
+.welcome__portrait figcaption { margin-top: .5rem; font-size: .9rem; }
 .welcome__full { margin-top: 2rem; }
 .welcome__letter { display: grid; gap: 1.4rem; margin-top: 1.5rem; font-size: 1.1rem; }
 .welcome__letter > p { max-width: var(--measure); }
