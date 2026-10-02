@@ -40,7 +40,6 @@ export const welcome = {
     // portrait as the avatar image. The poster below is the same photo and doubles as
     // the fallback if the embed URL is ever cleared.
     embedUrl: 'https://masky.ai/live/c-26-10-32nt?bg=fafaf6',
-    externalLabel: 'Open Dr. Estin’s welcome on Masky',
     src: null,
     poster: '/media/dr-estin-hero-portrait.jpeg',
     posterAlt: 'Dr. Estin smiling in glasses, a white baseball cap, and a light blue shirt.',

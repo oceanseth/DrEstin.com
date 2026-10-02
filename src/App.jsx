@@ -85,7 +85,7 @@ function Placeholder({ ratio, label, hint }) {
 }
 
 function WelcomePortrait() {
-  const { poster, posterAlt, embedUrl, externalLabel } = welcome.video
+  const { poster, posterAlt, embedUrl } = welcome.video
 
   if (embedUrl) {
     return (
@@ -97,11 +97,6 @@ function WelcomePortrait() {
           allow="autoplay; fullscreen"
           allowFullScreen
         />
-        <figcaption>
-          <a href={embedUrl} target="_blank" rel="noopener noreferrer">
-            {externalLabel}
-          </a>
-        </figcaption>
       </figure>
     )
   }
